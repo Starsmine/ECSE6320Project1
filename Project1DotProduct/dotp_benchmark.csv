@@ -1,0 +1,1681 @@
+Kernel,Type,N_buf,Pattern,Stride,Trial,Time(ms),GFLOP/s,Result
+Scalar float32,float32,1024,contiguous,1,1,0.0006,3.41333,2048
+Scalar float32,float32,1024,contiguous,1,2,0.0006,3.41333,2048
+Scalar float32,float32,1024,contiguous,1,3,0.0006,3.41333,2048
+Scalar float32,float32,1024,contiguous,1,4,0.0006,3.41333,2048
+Scalar float32,float32,1024,contiguous,1,5,0.0005,4.096,2048
+Scalar float32,float32,4096,contiguous,1,1,0.0023,3.56174,8192
+Scalar float32,float32,4096,contiguous,1,2,0.0023,3.56174,8192
+Scalar float32,float32,4096,contiguous,1,3,0.0023,3.56174,8192
+Scalar float32,float32,4096,contiguous,1,4,0.0022,3.72364,8192
+Scalar float32,float32,4096,contiguous,1,5,0.0022,3.72364,8192
+Scalar float32,float32,16384,contiguous,1,1,0.0089,3.6818,32768
+Scalar float32,float32,16384,contiguous,1,2,0.009,3.64089,32768
+Scalar float32,float32,16384,contiguous,1,3,0.009,3.64089,32768
+Scalar float32,float32,16384,contiguous,1,4,0.009,3.64089,32768
+Scalar float32,float32,16384,contiguous,1,5,0.009,3.64089,32768
+Scalar float32,float32,65536,contiguous,1,1,0.0359,3.65103,131072
+Scalar float32,float32,65536,contiguous,1,2,0.0358,3.66123,131072
+Scalar float32,float32,65536,contiguous,1,3,0.0361,3.6308,131072
+Scalar float32,float32,65536,contiguous,1,4,0.0358,3.66123,131072
+Scalar float32,float32,65536,contiguous,1,5,0.0358,3.66123,131072
+Scalar float32,float32,262144,contiguous,1,1,0.1431,3.66379,524288
+Scalar float32,float32,262144,contiguous,1,2,0.1433,3.65867,524288
+Scalar float32,float32,262144,contiguous,1,3,0.1432,3.66123,524288
+Scalar float32,float32,262144,contiguous,1,4,0.1432,3.66123,524288
+Scalar float32,float32,262144,contiguous,1,5,0.1431,3.66379,524288
+Scalar float32,float32,1048576,contiguous,1,1,0.5765,3.63773,2.09715e+06
+Scalar float32,float32,1048576,contiguous,1,2,0.573,3.65995,2.09715e+06
+Scalar float32,float32,1048576,contiguous,1,3,0.5728,3.66123,2.09715e+06
+Scalar float32,float32,1048576,contiguous,1,4,0.5725,3.66315,2.09715e+06
+Scalar float32,float32,1048576,contiguous,1,5,0.5782,3.62704,2.09715e+06
+Scalar float32,float32,1023,misaligned,1,1,0.0006,3.41,2046
+Scalar float32,float32,1023,misaligned,1,2,0.0006,3.41,2046
+Scalar float32,float32,1023,misaligned,1,3,0.0006,3.41,2046
+Scalar float32,float32,1023,misaligned,1,4,0.0005,4.092,2046
+Scalar float32,float32,1023,misaligned,1,5,0.0006,3.41,2046
+Scalar float32,float32,4095,misaligned,1,1,0.0022,3.72273,8190
+Scalar float32,float32,4095,misaligned,1,2,0.0023,3.56087,8190
+Scalar float32,float32,4095,misaligned,1,3,0.0023,3.56087,8190
+Scalar float32,float32,4095,misaligned,1,4,0.0024,3.4125,8190
+Scalar float32,float32,4095,misaligned,1,5,0.0022,3.72273,8190
+Scalar float32,float32,16383,misaligned,1,1,0.009,3.64067,32766
+Scalar float32,float32,16383,misaligned,1,2,0.0089,3.68157,32766
+Scalar float32,float32,16383,misaligned,1,3,0.0089,3.68157,32766
+Scalar float32,float32,16383,misaligned,1,4,0.009,3.64067,32766
+Scalar float32,float32,16383,misaligned,1,5,0.0089,3.68157,32766
+Scalar float32,float32,65535,misaligned,1,1,0.0358,3.66117,131070
+Scalar float32,float32,65535,misaligned,1,2,0.0358,3.66117,131070
+Scalar float32,float32,65535,misaligned,1,3,0.0508,2.58012,131070
+Scalar float32,float32,65535,misaligned,1,4,0.0358,3.66117,131070
+Scalar float32,float32,65535,misaligned,1,5,0.0358,3.66117,131070
+Scalar float32,float32,262143,misaligned,1,1,0.1722,3.04463,524286
+Scalar float32,float32,262143,misaligned,1,2,0.1431,3.66377,524286
+Scalar float32,float32,262143,misaligned,1,3,0.1438,3.64594,524286
+Scalar float32,float32,262143,misaligned,1,4,0.1432,3.66122,524286
+Scalar float32,float32,262143,misaligned,1,5,0.1431,3.66377,524286
+Scalar float32,float32,1048575,misaligned,1,1,0.5729,3.66059,2.09715e+06
+Scalar float32,float32,1048575,misaligned,1,2,0.5817,3.60521,2.09715e+06
+Scalar float32,float32,1048575,misaligned,1,3,0.5849,3.58548,2.09715e+06
+Scalar float32,float32,1048575,misaligned,1,4,0.5736,3.65612,2.09715e+06
+Scalar float32,float32,1048575,misaligned,1,5,0.5724,3.66378,2.09715e+06
+Scalar float64,float64,1024,contiguous,1,1,0.0006,3.41333,2048
+Scalar float64,float64,1024,contiguous,1,2,0.0005,4.096,2048
+Scalar float64,float64,1024,contiguous,1,3,0.0005,4.096,2048
+Scalar float64,float64,1024,contiguous,1,4,0.0006,3.41333,2048
+Scalar float64,float64,1024,contiguous,1,5,0.0006,3.41333,2048
+Scalar float64,float64,4096,contiguous,1,1,0.0039,2.10051,8192
+Scalar float64,float64,4096,contiguous,1,2,0.0023,3.56174,8192
+Scalar float64,float64,4096,contiguous,1,3,0.0022,3.72364,8192
+Scalar float64,float64,4096,contiguous,1,4,0.0023,3.56174,8192
+Scalar float64,float64,4096,contiguous,1,5,0.0022,3.72364,8192
+Scalar float64,float64,16384,contiguous,1,1,0.009,3.64089,32768
+Scalar float64,float64,16384,contiguous,1,2,0.009,3.64089,32768
+Scalar float64,float64,16384,contiguous,1,3,0.009,3.64089,32768
+Scalar float64,float64,16384,contiguous,1,4,0.0089,3.6818,32768
+Scalar float64,float64,16384,contiguous,1,5,0.009,3.64089,32768
+Scalar float64,float64,65536,contiguous,1,1,0.0359,3.65103,131072
+Scalar float64,float64,65536,contiguous,1,2,0.0358,3.66123,131072
+Scalar float64,float64,65536,contiguous,1,3,0.0358,3.66123,131072
+Scalar float64,float64,65536,contiguous,1,4,0.0359,3.65103,131072
+Scalar float64,float64,65536,contiguous,1,5,0.0358,3.66123,131072
+Scalar float64,float64,262144,contiguous,1,1,0.1448,3.62077,524288
+Scalar float64,float64,262144,contiguous,1,2,0.1441,3.63836,524288
+Scalar float64,float64,262144,contiguous,1,3,0.1439,3.64342,524288
+Scalar float64,float64,262144,contiguous,1,4,0.1438,3.64595,524288
+Scalar float64,float64,262144,contiguous,1,5,0.1434,3.65612,524288
+Scalar float64,float64,1048576,contiguous,1,1,0.5825,3.60026,2.09715e+06
+Scalar float64,float64,1048576,contiguous,1,2,0.5806,3.61204,2.09715e+06
+Scalar float64,float64,1048576,contiguous,1,3,0.5791,3.6214,2.09715e+06
+Scalar float64,float64,1048576,contiguous,1,4,0.5734,3.6574,2.09715e+06
+Scalar float64,float64,1048576,contiguous,1,5,0.5775,3.63143,2.09715e+06
+Scalar float64,float64,1023,misaligned,1,1,0.0005,4.092,2046
+Scalar float64,float64,1023,misaligned,1,2,0.0006,3.41,2046
+Scalar float64,float64,1023,misaligned,1,3,0.0005,4.092,2046
+Scalar float64,float64,1023,misaligned,1,4,0.0006,3.41,2046
+Scalar float64,float64,1023,misaligned,1,5,0.0006,3.41,2046
+Scalar float64,float64,4095,misaligned,1,1,0.0023,3.56087,8190
+Scalar float64,float64,4095,misaligned,1,2,0.0023,3.56087,8190
+Scalar float64,float64,4095,misaligned,1,3,0.0022,3.72273,8190
+Scalar float64,float64,4095,misaligned,1,4,0.0022,3.72273,8190
+Scalar float64,float64,4095,misaligned,1,5,0.0022,3.72273,8190
+Scalar float64,float64,16383,misaligned,1,1,0.0089,3.68157,32766
+Scalar float64,float64,16383,misaligned,1,2,0.009,3.64067,32766
+Scalar float64,float64,16383,misaligned,1,3,0.009,3.64067,32766
+Scalar float64,float64,16383,misaligned,1,4,0.0089,3.68157,32766
+Scalar float64,float64,16383,misaligned,1,5,0.009,3.64067,32766
+Scalar float64,float64,65535,misaligned,1,1,0.0358,3.66117,131070
+Scalar float64,float64,65535,misaligned,1,2,0.0358,3.66117,131070
+Scalar float64,float64,65535,misaligned,1,3,0.0358,3.66117,131070
+Scalar float64,float64,65535,misaligned,1,4,0.0358,3.66117,131070
+Scalar float64,float64,65535,misaligned,1,5,0.0358,3.66117,131070
+Scalar float64,float64,262143,misaligned,1,1,0.1431,3.66377,524286
+Scalar float64,float64,262143,misaligned,1,2,0.1431,3.66377,524286
+Scalar float64,float64,262143,misaligned,1,3,0.1456,3.60087,524286
+Scalar float64,float64,262143,misaligned,1,4,0.1432,3.66122,524286
+Scalar float64,float64,262143,misaligned,1,5,0.1431,3.66377,524286
+Scalar float64,float64,1048575,misaligned,1,1,0.5808,3.6108,2.09715e+06
+Scalar float64,float64,1048575,misaligned,1,2,0.5742,3.6523,2.09715e+06
+Scalar float64,float64,1048575,misaligned,1,3,0.5901,3.55389,2.09715e+06
+Scalar float64,float64,1048575,misaligned,1,4,0.5749,3.64785,2.09715e+06
+Scalar float64,float64,1048575,misaligned,1,5,0.5879,3.56719,2.09715e+06
+SSE2 float32,float32,1024,contiguous,1,1,0.0001,20.48,2048
+SSE2 float32,float32,1024,contiguous,1,2,0.0001,20.48,2048
+SSE2 float32,float32,1024,contiguous,1,3,0.0002,10.24,2048
+SSE2 float32,float32,1024,contiguous,1,4,0.0002,10.24,2048
+SSE2 float32,float32,1024,contiguous,1,5,0.0001,20.48,2048
+SSE2 float32,float32,4096,contiguous,1,1,0.0006,13.6533,8192
+SSE2 float32,float32,4096,contiguous,1,2,0.0006,13.6533,8192
+SSE2 float32,float32,4096,contiguous,1,3,0.0006,13.6533,8192
+SSE2 float32,float32,4096,contiguous,1,4,0.0005,16.384,8192
+SSE2 float32,float32,4096,contiguous,1,5,0.0006,13.6533,8192
+SSE2 float32,float32,16384,contiguous,1,1,0.0022,14.8945,32768
+SSE2 float32,float32,16384,contiguous,1,2,0.0022,14.8945,32768
+SSE2 float32,float32,16384,contiguous,1,3,0.0023,14.247,32768
+SSE2 float32,float32,16384,contiguous,1,4,0.0023,14.247,32768
+SSE2 float32,float32,16384,contiguous,1,5,0.0023,14.247,32768
+SSE2 float32,float32,65536,contiguous,1,1,0.0092,14.247,131072
+SSE2 float32,float32,65536,contiguous,1,2,0.009,14.5636,131072
+SSE2 float32,float32,65536,contiguous,1,3,0.009,14.5636,131072
+SSE2 float32,float32,65536,contiguous,1,4,0.009,14.5636,131072
+SSE2 float32,float32,65536,contiguous,1,5,0.0089,14.7272,131072
+SSE2 float32,float32,262144,contiguous,1,1,0.0359,14.6041,524288
+SSE2 float32,float32,262144,contiguous,1,2,0.0359,14.6041,524288
+SSE2 float32,float32,262144,contiguous,1,3,0.0359,14.6041,524288
+SSE2 float32,float32,262144,contiguous,1,4,0.0359,14.6041,524288
+SSE2 float32,float32,262144,contiguous,1,5,0.0359,14.6041,524288
+SSE2 float32,float32,1048576,contiguous,1,1,0.1437,14.594,2.09715e+06
+SSE2 float32,float32,1048576,contiguous,1,2,0.1433,14.6347,2.09715e+06
+SSE2 float32,float32,1048576,contiguous,1,3,0.1435,14.6143,2.09715e+06
+SSE2 float32,float32,1048576,contiguous,1,4,0.1434,14.6245,2.09715e+06
+SSE2 float32,float32,1048576,contiguous,1,5,0.1445,14.5132,2.09715e+06
+SSE2 float32,float32,1023,misaligned,1,1,0.0002,10.23,2046
+SSE2 float32,float32,1023,misaligned,1,2,0.0002,10.23,2046
+SSE2 float32,float32,1023,misaligned,1,3,0.0002,10.23,2046
+SSE2 float32,float32,1023,misaligned,1,4,0.0002,10.23,2046
+SSE2 float32,float32,1023,misaligned,1,5,0.0002,10.23,2046
+SSE2 float32,float32,4095,misaligned,1,1,0.0006,13.65,8190
+SSE2 float32,float32,4095,misaligned,1,2,0.0006,13.65,8190
+SSE2 float32,float32,4095,misaligned,1,3,0.0006,13.65,8190
+SSE2 float32,float32,4095,misaligned,1,4,0.0006,13.65,8190
+SSE2 float32,float32,4095,misaligned,1,5,0.0006,13.65,8190
+SSE2 float32,float32,16383,misaligned,1,1,0.0023,14.2461,32766
+SSE2 float32,float32,16383,misaligned,1,2,0.0023,14.2461,32766
+SSE2 float32,float32,16383,misaligned,1,3,0.0023,14.2461,32766
+SSE2 float32,float32,16383,misaligned,1,4,0.0023,14.2461,32766
+SSE2 float32,float32,16383,misaligned,1,5,0.0023,14.2461,32766
+SSE2 float32,float32,65535,misaligned,1,1,0.009,14.5633,131070
+SSE2 float32,float32,65535,misaligned,1,2,0.009,14.5633,131070
+SSE2 float32,float32,65535,misaligned,1,3,0.009,14.5633,131070
+SSE2 float32,float32,65535,misaligned,1,4,0.009,14.5633,131070
+SSE2 float32,float32,65535,misaligned,1,5,0.009,14.5633,131070
+SSE2 float32,float32,262143,misaligned,1,1,0.0359,14.6041,524286
+SSE2 float32,float32,262143,misaligned,1,2,0.0359,14.6041,524286
+SSE2 float32,float32,262143,misaligned,1,3,0.0359,14.6041,524286
+SSE2 float32,float32,262143,misaligned,1,4,0.0359,14.6041,524286
+SSE2 float32,float32,262143,misaligned,1,5,0.0359,14.6041,524286
+SSE2 float32,float32,1048575,misaligned,1,1,0.1437,14.5939,2.09715e+06
+SSE2 float32,float32,1048575,misaligned,1,2,0.1434,14.6245,2.09715e+06
+SSE2 float32,float32,1048575,misaligned,1,3,0.1433,14.6347,2.09715e+06
+SSE2 float32,float32,1048575,misaligned,1,4,0.1434,14.6245,2.09715e+06
+SSE2 float32,float32,1048575,misaligned,1,5,0.1481,14.1604,2.09715e+06
+SSE2 float64,float64,1024,contiguous,1,1,0.0003,6.82667,2048
+SSE2 float64,float64,1024,contiguous,1,2,0.0003,6.82667,2048
+SSE2 float64,float64,1024,contiguous,1,3,0.0003,6.82667,2048
+SSE2 float64,float64,1024,contiguous,1,4,0.0003,6.82667,2048
+SSE2 float64,float64,1024,contiguous,1,5,0.0003,6.82667,2048
+SSE2 float64,float64,4096,contiguous,1,1,0.0012,6.82667,8192
+SSE2 float64,float64,4096,contiguous,1,2,0.0011,7.44727,8192
+SSE2 float64,float64,4096,contiguous,1,3,0.0012,6.82667,8192
+SSE2 float64,float64,4096,contiguous,1,4,0.0011,7.44727,8192
+SSE2 float64,float64,4096,contiguous,1,5,0.0012,6.82667,8192
+SSE2 float64,float64,16384,contiguous,1,1,0.0045,7.28178,32768
+SSE2 float64,float64,16384,contiguous,1,2,0.0045,7.28178,32768
+SSE2 float64,float64,16384,contiguous,1,3,0.0045,7.28178,32768
+SSE2 float64,float64,16384,contiguous,1,4,0.0045,7.28178,32768
+SSE2 float64,float64,16384,contiguous,1,5,0.0045,7.28178,32768
+SSE2 float64,float64,65536,contiguous,1,1,0.0185,7.08497,131072
+SSE2 float64,float64,65536,contiguous,1,2,0.0184,7.12348,131072
+SSE2 float64,float64,65536,contiguous,1,3,0.018,7.28178,131072
+SSE2 float64,float64,65536,contiguous,1,4,0.0179,7.32246,131072
+SSE2 float64,float64,65536,contiguous,1,5,0.0179,7.32246,131072
+SSE2 float64,float64,262144,contiguous,1,1,0.0814,6.44088,524288
+SSE2 float64,float64,262144,contiguous,1,2,0.0739,7.09456,524288
+SSE2 float64,float64,262144,contiguous,1,3,0.0747,7.01858,524288
+SSE2 float64,float64,262144,contiguous,1,4,0.073,7.18203,524288
+SSE2 float64,float64,262144,contiguous,1,5,0.0727,7.21166,524288
+SSE2 float64,float64,1048576,contiguous,1,1,0.2986,7.02328,2.09715e+06
+SSE2 float64,float64,1048576,contiguous,1,2,0.2939,7.1356,2.09715e+06
+SSE2 float64,float64,1048576,contiguous,1,3,0.3125,6.71089,2.09715e+06
+SSE2 float64,float64,1048576,contiguous,1,4,0.3264,6.4251,2.09715e+06
+SSE2 float64,float64,1048576,contiguous,1,5,0.2936,7.14289,2.09715e+06
+SSE2 float64,float64,1023,misaligned,1,1,0.0003,6.82,2046
+SSE2 float64,float64,1023,misaligned,1,2,0.0003,6.82,2046
+SSE2 float64,float64,1023,misaligned,1,3,0.0003,6.82,2046
+SSE2 float64,float64,1023,misaligned,1,4,0.0003,6.82,2046
+SSE2 float64,float64,1023,misaligned,1,5,0.0003,6.82,2046
+SSE2 float64,float64,4095,misaligned,1,1,0.0012,6.825,8190
+SSE2 float64,float64,4095,misaligned,1,2,0.0012,6.825,8190
+SSE2 float64,float64,4095,misaligned,1,3,0.0012,6.825,8190
+SSE2 float64,float64,4095,misaligned,1,4,0.0012,6.825,8190
+SSE2 float64,float64,4095,misaligned,1,5,0.0012,6.825,8190
+SSE2 float64,float64,16383,misaligned,1,1,0.0045,7.28133,32766
+SSE2 float64,float64,16383,misaligned,1,2,0.0045,7.28133,32766
+SSE2 float64,float64,16383,misaligned,1,3,0.0045,7.28133,32766
+SSE2 float64,float64,16383,misaligned,1,4,0.0045,7.28133,32766
+SSE2 float64,float64,16383,misaligned,1,5,0.0045,7.28133,32766
+SSE2 float64,float64,65535,misaligned,1,1,0.018,7.28167,131070
+SSE2 float64,float64,65535,misaligned,1,2,0.018,7.28167,131070
+SSE2 float64,float64,65535,misaligned,1,3,0.018,7.28167,131070
+SSE2 float64,float64,65535,misaligned,1,4,0.0179,7.32235,131070
+SSE2 float64,float64,65535,misaligned,1,5,0.018,7.28167,131070
+SSE2 float64,float64,262143,misaligned,1,1,0.0876,5.985,524286
+SSE2 float64,float64,262143,misaligned,1,2,0.0764,6.86238,524286
+SSE2 float64,float64,262143,misaligned,1,3,0.0735,7.13314,524286
+SSE2 float64,float64,262143,misaligned,1,4,0.0722,7.26158,524286
+SSE2 float64,float64,262143,misaligned,1,5,0.0717,7.31222,524286
+SSE2 float64,float64,1048575,misaligned,1,1,0.3379,6.20642,2.09715e+06
+SSE2 float64,float64,1048575,misaligned,1,2,0.2964,7.0754,2.09715e+06
+SSE2 float64,float64,1048575,misaligned,1,3,0.2931,7.15507,2.09715e+06
+SSE2 float64,float64,1048575,misaligned,1,4,0.294,7.13316,2.09715e+06
+SSE2 float64,float64,1048575,misaligned,1,5,0.2867,7.31479,2.09715e+06
+AVX float32,float32,1024,contiguous,1,1,0.0001,20.48,2048
+AVX float32,float32,1024,contiguous,1,2,0.0001,20.48,2048
+AVX float32,float32,1024,contiguous,1,3,0.0001,20.48,2048
+AVX float32,float32,1024,contiguous,1,4,0.0001,20.48,2048
+AVX float32,float32,1024,contiguous,1,5,0.0001,20.48,2048
+AVX float32,float32,4096,contiguous,1,1,0.0003,27.3067,8192
+AVX float32,float32,4096,contiguous,1,2,0.0003,27.3067,8192
+AVX float32,float32,4096,contiguous,1,3,0.0003,27.3067,8192
+AVX float32,float32,4096,contiguous,1,4,0.0003,27.3067,8192
+AVX float32,float32,4096,contiguous,1,5,0.0003,27.3067,8192
+AVX float32,float32,16384,contiguous,1,1,0.0011,29.7891,32768
+AVX float32,float32,16384,contiguous,1,2,0.0012,27.3067,32768
+AVX float32,float32,16384,contiguous,1,3,0.0011,29.7891,32768
+AVX float32,float32,16384,contiguous,1,4,0.0011,29.7891,32768
+AVX float32,float32,16384,contiguous,1,5,0.0011,29.7891,32768
+AVX float32,float32,65536,contiguous,1,1,0.0045,29.1271,131072
+AVX float32,float32,65536,contiguous,1,2,0.0045,29.1271,131072
+AVX float32,float32,65536,contiguous,1,3,0.0045,29.1271,131072
+AVX float32,float32,65536,contiguous,1,4,0.0045,29.1271,131072
+AVX float32,float32,65536,contiguous,1,5,0.0045,29.1271,131072
+AVX float32,float32,262144,contiguous,1,1,0.0184,28.4939,524288
+AVX float32,float32,262144,contiguous,1,2,0.018,29.1271,524288
+AVX float32,float32,262144,contiguous,1,3,0.018,29.1271,524288
+AVX float32,float32,262144,contiguous,1,4,0.018,29.1271,524288
+AVX float32,float32,262144,contiguous,1,5,0.018,29.1271,524288
+AVX float32,float32,1048576,contiguous,1,1,0.0728,28.807,2.09715e+06
+AVX float32,float32,1048576,contiguous,1,2,0.0718,29.2082,2.09715e+06
+AVX float32,float32,1048576,contiguous,1,3,0.0717,29.249,2.09715e+06
+AVX float32,float32,1048576,contiguous,1,4,0.0718,29.2082,2.09715e+06
+AVX float32,float32,1048576,contiguous,1,5,0.0718,29.2082,2.09715e+06
+AVX float32,float32,1023,misaligned,1,1,0.0001,20.46,2046
+AVX float32,float32,1023,misaligned,1,2,0.0001,20.46,2046
+AVX float32,float32,1023,misaligned,1,3,0.0001,20.46,2046
+AVX float32,float32,1023,misaligned,1,4,0.0001,20.46,2046
+AVX float32,float32,1023,misaligned,1,5,0.0001,20.46,2046
+AVX float32,float32,4095,misaligned,1,1,0.0003,27.3,8190
+AVX float32,float32,4095,misaligned,1,2,0.0003,27.3,8190
+AVX float32,float32,4095,misaligned,1,3,0.0003,27.3,8190
+AVX float32,float32,4095,misaligned,1,4,0.0004,20.475,8190
+AVX float32,float32,4095,misaligned,1,5,0.0003,27.3,8190
+AVX float32,float32,16383,misaligned,1,1,0.0012,27.305,32766
+AVX float32,float32,16383,misaligned,1,2,0.0011,29.7873,32766
+AVX float32,float32,16383,misaligned,1,3,0.0011,29.7873,32766
+AVX float32,float32,16383,misaligned,1,4,0.0012,27.305,32766
+AVX float32,float32,16383,misaligned,1,5,0.0012,27.305,32766
+AVX float32,float32,65535,misaligned,1,1,0.0045,29.1267,131070
+AVX float32,float32,65535,misaligned,1,2,0.0045,29.1267,131070
+AVX float32,float32,65535,misaligned,1,3,0.0045,29.1267,131070
+AVX float32,float32,65535,misaligned,1,4,0.0045,29.1267,131070
+AVX float32,float32,65535,misaligned,1,5,0.0046,28.4935,131070
+AVX float32,float32,262143,misaligned,1,1,0.018,29.127,524286
+AVX float32,float32,262143,misaligned,1,2,0.018,29.127,524286
+AVX float32,float32,262143,misaligned,1,3,0.018,29.127,524286
+AVX float32,float32,262143,misaligned,1,4,0.018,29.127,524286
+AVX float32,float32,262143,misaligned,1,5,0.022,23.8312,524286
+AVX float32,float32,1048575,misaligned,1,1,0.0724,28.9662,2.09715e+06
+AVX float32,float32,1048575,misaligned,1,2,0.0718,29.2082,2.09715e+06
+AVX float32,float32,1048575,misaligned,1,3,0.0718,29.2082,2.09715e+06
+AVX float32,float32,1048575,misaligned,1,4,0.0724,28.9662,2.09715e+06
+AVX float32,float32,1048575,misaligned,1,5,0.0718,29.2082,2.09715e+06
+AVX float64,float64,1024,contiguous,1,1,0.0002,10.24,2048
+AVX float64,float64,1024,contiguous,1,2,0.0002,10.24,2048
+AVX float64,float64,1024,contiguous,1,3,0.0002,10.24,2048
+AVX float64,float64,1024,contiguous,1,4,0.0002,10.24,2048
+AVX float64,float64,1024,contiguous,1,5,0.0002,10.24,2048
+AVX float64,float64,4096,contiguous,1,1,0.0006,13.6533,8192
+AVX float64,float64,4096,contiguous,1,2,0.0006,13.6533,8192
+AVX float64,float64,4096,contiguous,1,3,0.0006,13.6533,8192
+AVX float64,float64,4096,contiguous,1,4,0.0006,13.6533,8192
+AVX float64,float64,4096,contiguous,1,5,0.0006,13.6533,8192
+AVX float64,float64,16384,contiguous,1,1,0.0023,14.247,32768
+AVX float64,float64,16384,contiguous,1,2,0.0023,14.247,32768
+AVX float64,float64,16384,contiguous,1,3,0.0022,14.8945,32768
+AVX float64,float64,16384,contiguous,1,4,0.0022,14.8945,32768
+AVX float64,float64,16384,contiguous,1,5,0.0023,14.247,32768
+AVX float64,float64,65536,contiguous,1,1,0.0159,8.24352,131072
+AVX float64,float64,65536,contiguous,1,2,0.0158,8.2957,131072
+AVX float64,float64,65536,contiguous,1,3,0.0157,8.34854,131072
+AVX float64,float64,65536,contiguous,1,4,0.0157,8.34854,131072
+AVX float64,float64,65536,contiguous,1,5,0.0089,14.7272,131072
+AVX float64,float64,262144,contiguous,1,1,0.036,14.5636,524288
+AVX float64,float64,262144,contiguous,1,2,0.0359,14.6041,524288
+AVX float64,float64,262144,contiguous,1,3,0.0359,14.6041,524288
+AVX float64,float64,262144,contiguous,1,4,0.0363,14.4432,524288
+AVX float64,float64,262144,contiguous,1,5,0.036,14.5636,524288
+AVX float64,float64,1048576,contiguous,1,1,0.1485,14.1222,2.09715e+06
+AVX float64,float64,1048576,contiguous,1,2,0.1443,14.5333,2.09715e+06
+AVX float64,float64,1048576,contiguous,1,3,0.1434,14.6245,2.09715e+06
+AVX float64,float64,1048576,contiguous,1,4,0.1435,14.6143,2.09715e+06
+AVX float64,float64,1048576,contiguous,1,5,0.148,14.1699,2.09715e+06
+AVX float64,float64,1023,misaligned,1,1,0.0002,10.23,2046
+AVX float64,float64,1023,misaligned,1,2,0.0002,10.23,2046
+AVX float64,float64,1023,misaligned,1,3,0.0001,20.46,2046
+AVX float64,float64,1023,misaligned,1,4,0.0002,10.23,2046
+AVX float64,float64,1023,misaligned,1,5,0.0001,20.46,2046
+AVX float64,float64,4095,misaligned,1,1,0.0006,13.65,8190
+AVX float64,float64,4095,misaligned,1,2,0.0006,13.65,8190
+AVX float64,float64,4095,misaligned,1,3,0.0006,13.65,8190
+AVX float64,float64,4095,misaligned,1,4,0.0006,13.65,8190
+AVX float64,float64,4095,misaligned,1,5,0.0006,13.65,8190
+AVX float64,float64,16383,misaligned,1,1,0.0023,14.2461,32766
+AVX float64,float64,16383,misaligned,1,2,0.0022,14.8936,32766
+AVX float64,float64,16383,misaligned,1,3,0.0022,14.8936,32766
+AVX float64,float64,16383,misaligned,1,4,0.0023,14.2461,32766
+AVX float64,float64,16383,misaligned,1,5,0.0023,14.2461,32766
+AVX float64,float64,65535,misaligned,1,1,0.0093,14.0935,131070
+AVX float64,float64,65535,misaligned,1,2,0.0094,13.9436,131070
+AVX float64,float64,65535,misaligned,1,3,0.0091,14.4033,131070
+AVX float64,float64,65535,misaligned,1,4,0.009,14.5633,131070
+AVX float64,float64,65535,misaligned,1,5,0.009,14.5633,131070
+AVX float64,float64,262143,misaligned,1,1,0.0471,11.1313,524286
+AVX float64,float64,262143,misaligned,1,2,0.0361,14.5232,524286
+AVX float64,float64,262143,misaligned,1,3,0.0359,14.6041,524286
+AVX float64,float64,262143,misaligned,1,4,0.036,14.5635,524286
+AVX float64,float64,262143,misaligned,1,5,0.0359,14.6041,524286
+AVX float64,float64,1048575,misaligned,1,1,0.1486,14.1127,2.09715e+06
+AVX float64,float64,1048575,misaligned,1,2,0.1642,12.7719,2.09715e+06
+AVX float64,float64,1048575,misaligned,1,3,0.1548,13.5475,2.09715e+06
+AVX float64,float64,1048575,misaligned,1,4,0.1479,14.1795,2.09715e+06
+AVX float64,float64,1048575,misaligned,1,5,0.1438,14.5838,2.09715e+06
+AVX-512 f32,float32,1024,contiguous,1,1,0.0001,20.48,2048
+AVX-512 f32,float32,1024,contiguous,1,2,0.0001,20.48,2048
+AVX-512 f32,float32,1024,contiguous,1,3,0.0001,20.48,2048
+AVX-512 f32,float32,1024,contiguous,1,4,0,inf,2048
+AVX-512 f32,float32,1024,contiguous,1,5,0.0001,20.48,2048
+AVX-512 f32,float32,4096,contiguous,1,1,0.0004,20.48,8192
+AVX-512 f32,float32,4096,contiguous,1,2,0.0002,40.96,8192
+AVX-512 f32,float32,4096,contiguous,1,3,0.0002,40.96,8192
+AVX-512 f32,float32,4096,contiguous,1,4,0.0002,40.96,8192
+AVX-512 f32,float32,4096,contiguous,1,5,0.0002,40.96,8192
+AVX-512 f32,float32,16384,contiguous,1,1,0.0007,46.8114,32768
+AVX-512 f32,float32,16384,contiguous,1,2,0.0008,40.96,32768
+AVX-512 f32,float32,16384,contiguous,1,3,0.0008,40.96,32768
+AVX-512 f32,float32,16384,contiguous,1,4,0.0008,40.96,32768
+AVX-512 f32,float32,16384,contiguous,1,5,0.0008,40.96,32768
+AVX-512 f32,float32,65536,contiguous,1,1,0.0032,40.96,131072
+AVX-512 f32,float32,65536,contiguous,1,2,0.0031,42.2813,131072
+AVX-512 f32,float32,65536,contiguous,1,3,0.0034,38.5506,131072
+AVX-512 f32,float32,65536,contiguous,1,4,0.0035,37.4491,131072
+AVX-512 f32,float32,65536,contiguous,1,5,0.003,43.6907,131072
+AVX-512 f32,float32,262144,contiguous,1,1,0.0143,36.6635,524288
+AVX-512 f32,float32,262144,contiguous,1,2,0.0143,36.6635,524288
+AVX-512 f32,float32,262144,contiguous,1,3,0.0142,36.9217,524288
+AVX-512 f32,float32,262144,contiguous,1,4,0.0141,37.1835,524288
+AVX-512 f32,float32,262144,contiguous,1,5,0.0152,34.4926,524288
+AVX-512 f32,float32,1048576,contiguous,1,1,0.0568,36.9217,2.09715e+06
+AVX-512 f32,float32,1048576,contiguous,1,2,0.0567,36.9868,2.09715e+06
+AVX-512 f32,float32,1048576,contiguous,1,3,0.0568,36.9217,2.09715e+06
+AVX-512 f32,float32,1048576,contiguous,1,4,0.0568,36.9217,2.09715e+06
+AVX-512 f32,float32,1048576,contiguous,1,5,0.0629,33.341,2.09715e+06
+AVX-512 f32,float32,1023,misaligned,1,1,0.0001,20.46,2046
+AVX-512 f32,float32,1023,misaligned,1,2,0.0001,20.46,2046
+AVX-512 f32,float32,1023,misaligned,1,3,0.0001,20.46,2046
+AVX-512 f32,float32,1023,misaligned,1,4,0.0001,20.46,2046
+AVX-512 f32,float32,1023,misaligned,1,5,0.0001,20.46,2046
+AVX-512 f32,float32,4095,misaligned,1,1,0.0003,27.3,8190
+AVX-512 f32,float32,4095,misaligned,1,2,0.0003,27.3,8190
+AVX-512 f32,float32,4095,misaligned,1,3,0.0002,40.95,8190
+AVX-512 f32,float32,4095,misaligned,1,4,0.0002,40.95,8190
+AVX-512 f32,float32,4095,misaligned,1,5,0.0003,27.3,8190
+AVX-512 f32,float32,16383,misaligned,1,1,0.0008,40.9575,32766
+AVX-512 f32,float32,16383,misaligned,1,2,0.0009,36.4067,32766
+AVX-512 f32,float32,16383,misaligned,1,3,0.0009,36.4067,32766
+AVX-512 f32,float32,16383,misaligned,1,4,0.001,32.766,32766
+AVX-512 f32,float32,16383,misaligned,1,5,0.0009,36.4067,32766
+AVX-512 f32,float32,65535,misaligned,1,1,0.0035,37.4486,131070
+AVX-512 f32,float32,65535,misaligned,1,2,0.0036,36.4083,131070
+AVX-512 f32,float32,65535,misaligned,1,3,0.0033,39.7182,131070
+AVX-512 f32,float32,65535,misaligned,1,4,0.0036,36.4083,131070
+AVX-512 f32,float32,65535,misaligned,1,5,0.0036,36.4083,131070
+AVX-512 f32,float32,262143,misaligned,1,1,0.0178,29.4543,524286
+AVX-512 f32,float32,262143,misaligned,1,2,0.0169,31.0228,524286
+AVX-512 f32,float32,262143,misaligned,1,3,0.0167,31.3944,524286
+AVX-512 f32,float32,262143,misaligned,1,4,0.0176,29.789,524286
+AVX-512 f32,float32,262143,misaligned,1,5,0.0182,28.8069,524286
+AVX-512 f32,float32,1048575,misaligned,1,1,0.0604,34.721,2.09715e+06
+AVX-512 f32,float32,1048575,misaligned,1,2,0.0578,36.2829,2.09715e+06
+AVX-512 f32,float32,1048575,misaligned,1,3,0.0577,36.3458,2.09715e+06
+AVX-512 f32,float32,1048575,misaligned,1,4,0.0578,36.2829,2.09715e+06
+AVX-512 f32,float32,1048575,misaligned,1,5,0.0576,36.4089,2.09715e+06
+AVX-512 f64,float64,1024,contiguous,1,1,0.0002,10.24,2048
+AVX-512 f64,float64,1024,contiguous,1,2,0.0001,20.48,2048
+AVX-512 f64,float64,1024,contiguous,1,3,0.0001,20.48,2048
+AVX-512 f64,float64,1024,contiguous,1,4,0.0001,20.48,2048
+AVX-512 f64,float64,1024,contiguous,1,5,0.0001,20.48,2048
+AVX-512 f64,float64,4096,contiguous,1,1,0.0004,20.48,8192
+AVX-512 f64,float64,4096,contiguous,1,2,0.0004,20.48,8192
+AVX-512 f64,float64,4096,contiguous,1,3,0.0004,20.48,8192
+AVX-512 f64,float64,4096,contiguous,1,4,0.0004,20.48,8192
+AVX-512 f64,float64,4096,contiguous,1,5,0.0005,16.384,8192
+AVX-512 f64,float64,16384,contiguous,1,1,0.0016,20.48,32768
+AVX-512 f64,float64,16384,contiguous,1,2,0.0016,20.48,32768
+AVX-512 f64,float64,16384,contiguous,1,3,0.0016,20.48,32768
+AVX-512 f64,float64,16384,contiguous,1,4,0.0015,21.8453,32768
+AVX-512 f64,float64,16384,contiguous,1,5,0.0016,20.48,32768
+AVX-512 f64,float64,65536,contiguous,1,1,0.0071,18.4608,131072
+AVX-512 f64,float64,65536,contiguous,1,2,0.0072,18.2044,131072
+AVX-512 f64,float64,65536,contiguous,1,3,0.0072,18.2044,131072
+AVX-512 f64,float64,65536,contiguous,1,4,0.0072,18.2044,131072
+AVX-512 f64,float64,65536,contiguous,1,5,0.0071,18.4608,131072
+AVX-512 f64,float64,262144,contiguous,1,1,0.0331,15.8395,524288
+AVX-512 f64,float64,262144,contiguous,1,2,0.0284,18.4608,524288
+AVX-512 f64,float64,262144,contiguous,1,3,0.0282,18.5918,524288
+AVX-512 f64,float64,262144,contiguous,1,4,0.0284,18.4608,524288
+AVX-512 f64,float64,262144,contiguous,1,5,0.0282,18.5918,524288
+AVX-512 f64,float64,1048576,contiguous,1,1,0.1277,16.4225,2.09715e+06
+AVX-512 f64,float64,1048576,contiguous,1,2,0.1158,18.1101,2.09715e+06
+AVX-512 f64,float64,1048576,contiguous,1,3,0.1157,18.1258,2.09715e+06
+AVX-512 f64,float64,1048576,contiguous,1,4,0.1156,18.1415,2.09715e+06
+AVX-512 f64,float64,1048576,contiguous,1,5,0.1152,18.2044,2.09715e+06
+AVX-512 f64,float64,1023,misaligned,1,1,0.0001,20.46,2046
+AVX-512 f64,float64,1023,misaligned,1,2,0.0001,20.46,2046
+AVX-512 f64,float64,1023,misaligned,1,3,0.0001,20.46,2046
+AVX-512 f64,float64,1023,misaligned,1,4,0.0002,10.23,2046
+AVX-512 f64,float64,1023,misaligned,1,5,0.0001,20.46,2046
+AVX-512 f64,float64,4095,misaligned,1,1,0.0005,16.38,8190
+AVX-512 f64,float64,4095,misaligned,1,2,0.0004,20.475,8190
+AVX-512 f64,float64,4095,misaligned,1,3,0.0005,16.38,8190
+AVX-512 f64,float64,4095,misaligned,1,4,0.0005,16.38,8190
+AVX-512 f64,float64,4095,misaligned,1,5,0.0005,16.38,8190
+AVX-512 f64,float64,16383,misaligned,1,1,0.0017,19.2741,32766
+AVX-512 f64,float64,16383,misaligned,1,2,0.0016,20.4788,32766
+AVX-512 f64,float64,16383,misaligned,1,3,0.0016,20.4788,32766
+AVX-512 f64,float64,16383,misaligned,1,4,0.0016,20.4788,32766
+AVX-512 f64,float64,16383,misaligned,1,5,0.0016,20.4788,32766
+AVX-512 f64,float64,65535,misaligned,1,1,0.0073,17.9548,131070
+AVX-512 f64,float64,65535,misaligned,1,2,0.0075,17.476,131070
+AVX-512 f64,float64,65535,misaligned,1,3,0.0074,17.7122,131070
+AVX-512 f64,float64,65535,misaligned,1,4,0.0074,17.7122,131070
+AVX-512 f64,float64,65535,misaligned,1,5,0.0075,17.476,131070
+AVX-512 f64,float64,262143,misaligned,1,1,0.0293,17.8937,524286
+AVX-512 f64,float64,262143,misaligned,1,2,0.0288,18.2044,524286
+AVX-512 f64,float64,262143,misaligned,1,3,0.0289,18.1414,524286
+AVX-512 f64,float64,262143,misaligned,1,4,0.0331,15.8395,524286
+AVX-512 f64,float64,262143,misaligned,1,5,0.0308,17.0223,524286
+AVX-512 f64,float64,1048575,misaligned,1,1,0.2734,7.67063,2.09715e+06
+AVX-512 f64,float64,1048575,misaligned,1,2,0.1257,16.6838,2.09715e+06
+AVX-512 f64,float64,1048575,misaligned,1,3,0.1153,18.1886,2.09715e+06
+AVX-512 f64,float64,1048575,misaligned,1,4,0.1148,18.2679,2.09715e+06
+AVX-512 f64,float64,1048575,misaligned,1,5,0.1167,17.9704,2.09715e+06
+SSE2 float32 stride=1,float32,8193,strided,1,1,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,2,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,3,0.0001,20.48,2048
+SSE2 float32 stride=1,float32,8193,strided,1,4,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,5,0.0001,20.48,2048
+SSE2 float32 stride=2,float32,8193,strided,2,1,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,2,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,3,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,4,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,5,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,1,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,2,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,3,0.0005,4.096,2048
+SSE2 float32 stride=4,float32,8193,strided,4,4,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,5,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,1,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,2,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,3,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,4,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,5,0.0006,3.41333,2048
+SSE2 float32,float32,8193,gather,0,1,0.0008,2.56,2048
+SSE2 float32,float32,8193,gather,0,2,0.0009,2.27556,2048
+SSE2 float32,float32,8193,gather,0,3,0.0009,2.27556,2048
+SSE2 float32,float32,8193,gather,0,4,0.0009,2.27556,2048
+SSE2 float32,float32,8193,gather,0,5,0.0009,2.27556,2048
+SSE2 float32 stride=1,float32,32769,strided,1,1,0.0005,16.384,8192
+SSE2 float32 stride=1,float32,32769,strided,1,2,0.0006,13.6533,8192
+SSE2 float32 stride=1,float32,32769,strided,1,3,0.0006,13.6533,8192
+SSE2 float32 stride=1,float32,32769,strided,1,4,0.0006,13.6533,8192
+SSE2 float32 stride=1,float32,32769,strided,1,5,0.0006,13.6533,8192
+SSE2 float32 stride=2,float32,32769,strided,2,1,0.0022,3.72364,8192
+SSE2 float32 stride=2,float32,32769,strided,2,2,0.0023,3.56174,8192
+SSE2 float32 stride=2,float32,32769,strided,2,3,0.0022,3.72364,8192
+SSE2 float32 stride=2,float32,32769,strided,2,4,0.0023,3.56174,8192
+SSE2 float32 stride=2,float32,32769,strided,2,5,0.0023,3.56174,8192
+SSE2 float32 stride=4,float32,32769,strided,4,1,0.0022,3.72364,8192
+SSE2 float32 stride=4,float32,32769,strided,4,2,0.0022,3.72364,8192
+SSE2 float32 stride=4,float32,32769,strided,4,3,0.0023,3.56174,8192
+SSE2 float32 stride=4,float32,32769,strided,4,4,0.0023,3.56174,8192
+SSE2 float32 stride=4,float32,32769,strided,4,5,0.0023,3.56174,8192
+SSE2 float32 stride=8,float32,32769,strided,8,1,0.0023,3.56174,8192
+SSE2 float32 stride=8,float32,32769,strided,8,2,0.0023,3.56174,8192
+SSE2 float32 stride=8,float32,32769,strided,8,3,0.0039,2.10051,8192
+SSE2 float32 stride=8,float32,32769,strided,8,4,0.0039,2.10051,8192
+SSE2 float32 stride=8,float32,32769,strided,8,5,0.0022,3.72364,8192
+SSE2 float32,float32,32769,gather,0,1,0.0039,2.10051,8192
+SSE2 float32,float32,32769,gather,0,2,0.0041,1.99805,8192
+SSE2 float32,float32,32769,gather,0,3,0.0042,1.95048,8192
+SSE2 float32,float32,32769,gather,0,4,0.0041,1.99805,8192
+SSE2 float32,float32,32769,gather,0,5,0.0041,1.99805,8192
+SSE2 float32 stride=1,float32,131073,strided,1,1,0.0022,14.8945,32768
+SSE2 float32 stride=1,float32,131073,strided,1,2,0.0023,14.247,32768
+SSE2 float32 stride=1,float32,131073,strided,1,3,0.0023,14.247,32768
+SSE2 float32 stride=1,float32,131073,strided,1,4,0.0023,14.247,32768
+SSE2 float32 stride=1,float32,131073,strided,1,5,0.0023,14.247,32768
+SSE2 float32 stride=2,float32,131073,strided,2,1,0.0089,3.6818,32768
+SSE2 float32 stride=2,float32,131073,strided,2,2,0.009,3.64089,32768
+SSE2 float32 stride=2,float32,131073,strided,2,3,0.009,3.64089,32768
+SSE2 float32 stride=2,float32,131073,strided,2,4,0.0089,3.6818,32768
+SSE2 float32 stride=2,float32,131073,strided,2,5,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,1,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,2,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,3,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,4,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,5,0.0089,3.6818,32768
+SSE2 float32 stride=8,float32,131073,strided,8,1,0.0091,3.60088,32768
+SSE2 float32 stride=8,float32,131073,strided,8,2,0.009,3.64089,32768
+SSE2 float32 stride=8,float32,131073,strided,8,3,0.009,3.64089,32768
+SSE2 float32 stride=8,float32,131073,strided,8,4,0.009,3.64089,32768
+SSE2 float32 stride=8,float32,131073,strided,8,5,0.009,3.64089,32768
+SSE2 float32,float32,131073,gather,0,1,0.0168,1.95048,32768
+SSE2 float32,float32,131073,gather,0,2,0.0183,1.7906,32768
+SSE2 float32,float32,131073,gather,0,3,0.0176,1.86182,32768
+SSE2 float32,float32,131073,gather,0,4,0.0173,1.8941,32768
+SSE2 float32,float32,131073,gather,0,5,0.017,1.92753,32768
+SSE2 float32 stride=1,float32,524289,strided,1,1,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,2,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,3,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,4,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,5,0.009,14.5636,131072
+SSE2 float32 stride=2,float32,524289,strided,2,1,0.0363,3.6108,131072
+SSE2 float32 stride=2,float32,524289,strided,2,2,0.0359,3.65103,131072
+SSE2 float32 stride=2,float32,524289,strided,2,3,0.0359,3.65103,131072
+SSE2 float32 stride=2,float32,524289,strided,2,4,0.0358,3.66123,131072
+SSE2 float32 stride=2,float32,524289,strided,2,5,0.0358,3.66123,131072
+SSE2 float32 stride=4,float32,524289,strided,4,1,0.0394,3.3267,131072
+SSE2 float32 stride=4,float32,524289,strided,4,2,0.0358,3.66123,131072
+SSE2 float32 stride=4,float32,524289,strided,4,3,0.0358,3.66123,131072
+SSE2 float32 stride=4,float32,524289,strided,4,4,0.0358,3.66123,131072
+SSE2 float32 stride=4,float32,524289,strided,4,5,0.0358,3.66123,131072
+SSE2 float32 stride=8,float32,524289,strided,8,1,0.0361,3.6308,131072
+SSE2 float32 stride=8,float32,524289,strided,8,2,0.0361,3.6308,131072
+SSE2 float32 stride=8,float32,524289,strided,8,3,0.0359,3.65103,131072
+SSE2 float32 stride=8,float32,524289,strided,8,4,0.0359,3.65103,131072
+SSE2 float32 stride=8,float32,524289,strided,8,5,0.0359,3.65103,131072
+SSE2 float32,float32,524289,gather,0,1,0.0771,1.70003,131072
+SSE2 float32,float32,524289,gather,0,2,0.0716,1.83061,131072
+SSE2 float32,float32,524289,gather,0,3,0.0715,1.83317,131072
+SSE2 float32,float32,524289,gather,0,4,0.0715,1.83317,131072
+SSE2 float32,float32,524289,gather,0,5,0.0715,1.83317,131072
+SSE2 float32 stride=1,float32,8193,strided,1,1,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,2,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,3,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,4,0.0002,10.24,2048
+SSE2 float32 stride=1,float32,8193,strided,1,5,0.0002,10.24,2048
+SSE2 float32 stride=2,float32,8193,strided,2,1,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,2,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,3,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,4,0.0006,3.41333,2048
+SSE2 float32 stride=2,float32,8193,strided,2,5,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,1,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,2,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,3,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,4,0.0006,3.41333,2048
+SSE2 float32 stride=4,float32,8193,strided,4,5,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,1,0.0005,4.096,2048
+SSE2 float32 stride=8,float32,8193,strided,8,2,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,3,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,4,0.0006,3.41333,2048
+SSE2 float32 stride=8,float32,8193,strided,8,5,0.0006,3.41333,2048
+SSE2 float32,float32,8193,gather,0,1,0.0009,2.27556,2048
+SSE2 float32,float32,8193,gather,0,2,0.0008,2.56,2048
+SSE2 float32,float32,8193,gather,0,3,0.0009,2.27556,2048
+SSE2 float32,float32,8193,gather,0,4,0.0008,2.56,2048
+SSE2 float32,float32,8193,gather,0,5,0.0015,1.36533,2048
+SSE2 float32 stride=1,float32,32769,strided,1,1,0.001,8.192,8192
+SSE2 float32 stride=1,float32,32769,strided,1,2,0.001,8.192,8192
+SSE2 float32 stride=1,float32,32769,strided,1,3,0.0006,13.6533,8192
+SSE2 float32 stride=1,float32,32769,strided,1,4,0.0006,13.6533,8192
+SSE2 float32 stride=1,float32,32769,strided,1,5,0.0006,13.6533,8192
+SSE2 float32 stride=2,float32,32769,strided,2,1,0.0023,3.56174,8192
+SSE2 float32 stride=2,float32,32769,strided,2,2,0.0022,3.72364,8192
+SSE2 float32 stride=2,float32,32769,strided,2,3,0.0022,3.72364,8192
+SSE2 float32 stride=2,float32,32769,strided,2,4,0.0022,3.72364,8192
+SSE2 float32 stride=2,float32,32769,strided,2,5,0.0022,3.72364,8192
+SSE2 float32 stride=4,float32,32769,strided,4,1,0.0023,3.56174,8192
+SSE2 float32 stride=4,float32,32769,strided,4,2,0.0023,3.56174,8192
+SSE2 float32 stride=4,float32,32769,strided,4,3,0.0022,3.72364,8192
+SSE2 float32 stride=4,float32,32769,strided,4,4,0.0023,3.56174,8192
+SSE2 float32 stride=4,float32,32769,strided,4,5,0.0023,3.56174,8192
+SSE2 float32 stride=8,float32,32769,strided,8,1,0.0023,3.56174,8192
+SSE2 float32 stride=8,float32,32769,strided,8,2,0.0022,3.72364,8192
+SSE2 float32 stride=8,float32,32769,strided,8,3,0.0023,3.56174,8192
+SSE2 float32 stride=8,float32,32769,strided,8,4,0.0022,3.72364,8192
+SSE2 float32 stride=8,float32,32769,strided,8,5,0.0022,3.72364,8192
+SSE2 float32,float32,32769,gather,0,1,0.004,2.048,8192
+SSE2 float32,float32,32769,gather,0,2,0.0041,1.99805,8192
+SSE2 float32,float32,32769,gather,0,3,0.0041,1.99805,8192
+SSE2 float32,float32,32769,gather,0,4,0.004,2.048,8192
+SSE2 float32,float32,32769,gather,0,5,0.0045,1.82044,8192
+SSE2 float32 stride=1,float32,131073,strided,1,1,0.0022,14.8945,32768
+SSE2 float32 stride=1,float32,131073,strided,1,2,0.0023,14.247,32768
+SSE2 float32 stride=1,float32,131073,strided,1,3,0.0023,14.247,32768
+SSE2 float32 stride=1,float32,131073,strided,1,4,0.0022,14.8945,32768
+SSE2 float32 stride=1,float32,131073,strided,1,5,0.0023,14.247,32768
+SSE2 float32 stride=2,float32,131073,strided,2,1,0.009,3.64089,32768
+SSE2 float32 stride=2,float32,131073,strided,2,2,0.009,3.64089,32768
+SSE2 float32 stride=2,float32,131073,strided,2,3,0.009,3.64089,32768
+SSE2 float32 stride=2,float32,131073,strided,2,4,0.009,3.64089,32768
+SSE2 float32 stride=2,float32,131073,strided,2,5,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,1,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,2,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,3,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,4,0.009,3.64089,32768
+SSE2 float32 stride=4,float32,131073,strided,4,5,0.009,3.64089,32768
+SSE2 float32 stride=8,float32,131073,strided,8,1,0.0093,3.52344,32768
+SSE2 float32 stride=8,float32,131073,strided,8,2,0.0093,3.52344,32768
+SSE2 float32 stride=8,float32,131073,strided,8,3,0.0091,3.60088,32768
+SSE2 float32 stride=8,float32,131073,strided,8,4,0.0092,3.56174,32768
+SSE2 float32 stride=8,float32,131073,strided,8,5,0.0091,3.60088,32768
+SSE2 float32,float32,131073,gather,0,1,0.0208,1.57538,32768
+SSE2 float32,float32,131073,gather,0,2,0.0211,1.55299,32768
+SSE2 float32,float32,131073,gather,0,3,0.0198,1.65495,32768
+SSE2 float32,float32,131073,gather,0,4,0.0194,1.68907,32768
+SSE2 float32,float32,131073,gather,0,5,0.0189,1.73376,32768
+SSE2 float32 stride=1,float32,524289,strided,1,1,0.0097,13.5126,131072
+SSE2 float32 stride=1,float32,524289,strided,1,2,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,3,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,4,0.009,14.5636,131072
+SSE2 float32 stride=1,float32,524289,strided,1,5,0.0089,14.7272,131072
+SSE2 float32 stride=2,float32,524289,strided,2,1,0.0362,3.62077,131072
+SSE2 float32 stride=2,float32,524289,strided,2,2,0.0363,3.6108,131072
+SSE2 float32 stride=2,float32,524289,strided,2,3,0.0358,3.66123,131072
+SSE2 float32 stride=2,float32,524289,strided,2,4,0.0358,3.66123,131072
+SSE2 float32 stride=2,float32,524289,strided,2,5,0.0358,3.66123,131072
+SSE2 float32 stride=4,float32,524289,strided,4,1,0.0375,3.49525,131072
+SSE2 float32 stride=4,float32,524289,strided,4,2,0.0366,3.5812,131072
+SSE2 float32 stride=4,float32,524289,strided,4,3,0.039,3.36082,131072
+SSE2 float32 stride=4,float32,524289,strided,4,4,0.0369,3.55209,131072
+SSE2 float32 stride=4,float32,524289,strided,4,5,0.0361,3.6308,131072
+SSE2 float32 stride=8,float32,524289,strided,8,1,0.0495,2.64792,131072
+SSE2 float32 stride=8,float32,524289,strided,8,2,0.0388,3.37814,131072
+SSE2 float32 stride=8,float32,524289,strided,8,3,0.0361,3.6308,131072
+SSE2 float32 stride=8,float32,524289,strided,8,4,0.036,3.64089,131072
+SSE2 float32 stride=8,float32,524289,strided,8,5,0.036,3.64089,131072
+SSE2 float32,float32,524289,gather,0,1,0.0814,1.61022,131072
+SSE2 float32,float32,524289,gather,0,2,0.0829,1.58109,131072
+SSE2 float32,float32,524289,gather,0,3,0.0814,1.61022,131072
+SSE2 float32,float32,524289,gather,0,4,0.0812,1.61419,131072
+SSE2 float32,float32,524289,gather,0,5,0.0814,1.61022,131072
+SSE2 float64 stride=1,float64,8193,strided,1,1,0.0004,5.12,2048
+SSE2 float64 stride=1,float64,8193,strided,1,2,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,3,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,4,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,5,0.0003,6.82667,2048
+SSE2 float64 stride=2,float64,8193,strided,2,1,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,2,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,3,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,4,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,5,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,1,0.0005,4.096,2048
+SSE2 float64 stride=4,float64,8193,strided,4,2,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,3,0.0005,4.096,2048
+SSE2 float64 stride=4,float64,8193,strided,4,4,0.0005,4.096,2048
+SSE2 float64 stride=4,float64,8193,strided,4,5,0.0006,3.41333,2048
+SSE2 float64 stride=8,float64,8193,strided,8,1,0.0008,2.56,2048
+SSE2 float64 stride=8,float64,8193,strided,8,2,0.0007,2.92571,2048
+SSE2 float64 stride=8,float64,8193,strided,8,3,0.0007,2.92571,2048
+SSE2 float64 stride=8,float64,8193,strided,8,4,0.0007,2.92571,2048
+SSE2 float64 stride=8,float64,8193,strided,8,5,0.0008,2.56,2048
+SSE2 float64,float64,8193,gather,0,1,0.0014,1.46286,2048
+SSE2 float64,float64,8193,gather,0,2,0.0012,1.70667,2048
+SSE2 float64,float64,8193,gather,0,3,0.0012,1.70667,2048
+SSE2 float64,float64,8193,gather,0,4,0.0013,1.57538,2048
+SSE2 float64,float64,8193,gather,0,5,0.0016,1.28,2048
+SSE2 float64 stride=1,float64,32769,strided,1,1,0.0011,7.44727,8192
+SSE2 float64 stride=1,float64,32769,strided,1,2,0.0011,7.44727,8192
+SSE2 float64 stride=1,float64,32769,strided,1,3,0.0012,6.82667,8192
+SSE2 float64 stride=1,float64,32769,strided,1,4,0.0011,7.44727,8192
+SSE2 float64 stride=1,float64,32769,strided,1,5,0.0011,7.44727,8192
+SSE2 float64 stride=2,float64,32769,strided,2,1,0.0022,3.72364,8192
+SSE2 float64 stride=2,float64,32769,strided,2,2,0.0022,3.72364,8192
+SSE2 float64 stride=2,float64,32769,strided,2,3,0.0022,3.72364,8192
+SSE2 float64 stride=2,float64,32769,strided,2,4,0.0023,3.56174,8192
+SSE2 float64 stride=2,float64,32769,strided,2,5,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,1,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,2,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,3,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,4,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,5,0.0023,3.56174,8192
+SSE2 float64 stride=8,float64,32769,strided,8,1,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,2,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,3,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,4,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,5,0.0031,2.64258,8192
+SSE2 float64,float64,32769,gather,0,1,0.005,1.6384,8192
+SSE2 float64,float64,32769,gather,0,2,0.0059,1.38847,8192
+SSE2 float64,float64,32769,gather,0,3,0.0052,1.57538,8192
+SSE2 float64,float64,32769,gather,0,4,0.0052,1.57538,8192
+SSE2 float64,float64,32769,gather,0,5,0.0052,1.57538,8192
+SSE2 float64 stride=1,float64,131073,strided,1,1,0.0045,7.28178,32768
+SSE2 float64 stride=1,float64,131073,strided,1,2,0.0045,7.28178,32768
+SSE2 float64 stride=1,float64,131073,strided,1,3,0.0045,7.28178,32768
+SSE2 float64 stride=1,float64,131073,strided,1,4,0.0046,7.12348,32768
+SSE2 float64 stride=1,float64,131073,strided,1,5,0.0045,7.28178,32768
+SSE2 float64 stride=2,float64,131073,strided,2,1,0.009,3.64089,32768
+SSE2 float64 stride=2,float64,131073,strided,2,2,0.0091,3.60088,32768
+SSE2 float64 stride=2,float64,131073,strided,2,3,0.009,3.64089,32768
+SSE2 float64 stride=2,float64,131073,strided,2,4,0.009,3.64089,32768
+SSE2 float64 stride=2,float64,131073,strided,2,5,0.009,3.64089,32768
+SSE2 float64 stride=4,float64,131073,strided,4,1,0.0099,3.3099,32768
+SSE2 float64 stride=4,float64,131073,strided,4,2,0.0091,3.60088,32768
+SSE2 float64 stride=4,float64,131073,strided,4,3,0.0091,3.60088,32768
+SSE2 float64 stride=4,float64,131073,strided,4,4,0.0092,3.56174,32768
+SSE2 float64 stride=4,float64,131073,strided,4,5,0.0091,3.60088,32768
+SSE2 float64 stride=8,float64,131073,strided,8,1,0.0166,1.97398,32768
+SSE2 float64 stride=8,float64,131073,strided,8,2,0.0148,2.21405,32768
+SSE2 float64 stride=8,float64,131073,strided,8,3,0.0147,2.22912,32768
+SSE2 float64 stride=8,float64,131073,strided,8,4,0.0142,2.30761,32768
+SSE2 float64 stride=8,float64,131073,strided,8,5,0.0144,2.27556,32768
+SSE2 float64,float64,131073,gather,0,1,0.0211,1.55299,32768
+SSE2 float64,float64,131073,gather,0,2,0.0208,1.57538,32768
+SSE2 float64,float64,131073,gather,0,3,0.0206,1.59068,32768
+SSE2 float64,float64,131073,gather,0,4,0.0205,1.59844,32768
+SSE2 float64,float64,131073,gather,0,5,0.0201,1.63025,32768
+SSE2 float64 stride=1,float64,524289,strided,1,1,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,2,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,3,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,4,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,5,0.018,7.28178,131072
+SSE2 float64 stride=2,float64,524289,strided,2,1,0.0389,3.36946,131072
+SSE2 float64 stride=2,float64,524289,strided,2,2,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,3,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,4,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,5,0.0359,3.65103,131072
+SSE2 float64 stride=4,float64,524289,strided,4,1,0.0367,3.57144,131072
+SSE2 float64 stride=4,float64,524289,strided,4,2,0.0362,3.62077,131072
+SSE2 float64 stride=4,float64,524289,strided,4,3,0.0359,3.65103,131072
+SSE2 float64 stride=4,float64,524289,strided,4,4,0.036,3.64089,131072
+SSE2 float64 stride=4,float64,524289,strided,4,5,0.0359,3.65103,131072
+SSE2 float64 stride=8,float64,524289,strided,8,1,0.0587,2.23291,131072
+SSE2 float64 stride=8,float64,524289,strided,8,2,0.0561,2.3364,131072
+SSE2 float64 stride=8,float64,524289,strided,8,3,0.0561,2.3364,131072
+SSE2 float64 stride=8,float64,524289,strided,8,4,0.056,2.34057,131072
+SSE2 float64 stride=8,float64,524289,strided,8,5,0.0559,2.34476,131072
+SSE2 float64,float64,524289,gather,0,1,0.0833,1.57349,131072
+SSE2 float64,float64,524289,gather,0,2,0.0761,1.72237,131072
+SSE2 float64,float64,524289,gather,0,3,0.076,1.72463,131072
+SSE2 float64,float64,524289,gather,0,4,0.0761,1.72237,131072
+SSE2 float64,float64,524289,gather,0,5,0.0758,1.72918,131072
+SSE2 float64 stride=1,float64,8193,strided,1,1,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,2,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,3,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,4,0.0003,6.82667,2048
+SSE2 float64 stride=1,float64,8193,strided,1,5,0.0003,6.82667,2048
+SSE2 float64 stride=2,float64,8193,strided,2,1,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,2,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,3,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,4,0.0006,3.41333,2048
+SSE2 float64 stride=2,float64,8193,strided,2,5,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,1,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,2,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,3,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,4,0.0006,3.41333,2048
+SSE2 float64 stride=4,float64,8193,strided,4,5,0.0006,3.41333,2048
+SSE2 float64 stride=8,float64,8193,strided,8,1,0.0008,2.56,2048
+SSE2 float64 stride=8,float64,8193,strided,8,2,0.0008,2.56,2048
+SSE2 float64 stride=8,float64,8193,strided,8,3,0.0008,2.56,2048
+SSE2 float64 stride=8,float64,8193,strided,8,4,0.0008,2.56,2048
+SSE2 float64 stride=8,float64,8193,strided,8,5,0.0008,2.56,2048
+SSE2 float64,float64,8193,gather,0,1,0.0015,1.36533,2048
+SSE2 float64,float64,8193,gather,0,2,0.0012,1.70667,2048
+SSE2 float64,float64,8193,gather,0,3,0.0013,1.57538,2048
+SSE2 float64,float64,8193,gather,0,4,0.0013,1.57538,2048
+SSE2 float64,float64,8193,gather,0,5,0.0013,1.57538,2048
+SSE2 float64 stride=1,float64,32769,strided,1,1,0.0012,6.82667,8192
+SSE2 float64 stride=1,float64,32769,strided,1,2,0.0011,7.44727,8192
+SSE2 float64 stride=1,float64,32769,strided,1,3,0.0011,7.44727,8192
+SSE2 float64 stride=1,float64,32769,strided,1,4,0.0011,7.44727,8192
+SSE2 float64 stride=1,float64,32769,strided,1,5,0.0012,6.82667,8192
+SSE2 float64 stride=2,float64,32769,strided,2,1,0.0023,3.56174,8192
+SSE2 float64 stride=2,float64,32769,strided,2,2,0.0023,3.56174,8192
+SSE2 float64 stride=2,float64,32769,strided,2,3,0.0022,3.72364,8192
+SSE2 float64 stride=2,float64,32769,strided,2,4,0.0023,3.56174,8192
+SSE2 float64 stride=2,float64,32769,strided,2,5,0.0022,3.72364,8192
+SSE2 float64 stride=4,float64,32769,strided,4,1,0.0022,3.72364,8192
+SSE2 float64 stride=4,float64,32769,strided,4,2,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,3,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,4,0.0023,3.56174,8192
+SSE2 float64 stride=4,float64,32769,strided,4,5,0.0023,3.56174,8192
+SSE2 float64 stride=8,float64,32769,strided,8,1,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,2,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,3,0.0031,2.64258,8192
+SSE2 float64 stride=8,float64,32769,strided,8,4,0.0032,2.56,8192
+SSE2 float64 stride=8,float64,32769,strided,8,5,0.0031,2.64258,8192
+SSE2 float64,float64,32769,gather,0,1,0.0051,1.60627,8192
+SSE2 float64,float64,32769,gather,0,2,0.0052,1.57538,8192
+SSE2 float64,float64,32769,gather,0,3,0.0052,1.57538,8192
+SSE2 float64,float64,32769,gather,0,4,0.0052,1.57538,8192
+SSE2 float64,float64,32769,gather,0,5,0.0053,1.54566,8192
+SSE2 float64 stride=1,float64,131073,strided,1,1,0.0045,7.28178,32768
+SSE2 float64 stride=1,float64,131073,strided,1,2,0.0045,7.28178,32768
+SSE2 float64 stride=1,float64,131073,strided,1,3,0.0045,7.28178,32768
+SSE2 float64 stride=1,float64,131073,strided,1,4,0.0046,7.12348,32768
+SSE2 float64 stride=1,float64,131073,strided,1,5,0.0045,7.28178,32768
+SSE2 float64 stride=2,float64,131073,strided,2,1,0.009,3.64089,32768
+SSE2 float64 stride=2,float64,131073,strided,2,2,0.0089,3.6818,32768
+SSE2 float64 stride=2,float64,131073,strided,2,3,0.009,3.64089,32768
+SSE2 float64 stride=2,float64,131073,strided,2,4,0.009,3.64089,32768
+SSE2 float64 stride=2,float64,131073,strided,2,5,0.009,3.64089,32768
+SSE2 float64 stride=4,float64,131073,strided,4,1,0.009,3.64089,32768
+SSE2 float64 stride=4,float64,131073,strided,4,2,0.0091,3.60088,32768
+SSE2 float64 stride=4,float64,131073,strided,4,3,0.009,3.64089,32768
+SSE2 float64 stride=4,float64,131073,strided,4,4,0.009,3.64089,32768
+SSE2 float64 stride=4,float64,131073,strided,4,5,0.0091,3.60088,32768
+SSE2 float64 stride=8,float64,131073,strided,8,1,0.0145,2.25986,32768
+SSE2 float64 stride=8,float64,131073,strided,8,2,0.0142,2.30761,32768
+SSE2 float64 stride=8,float64,131073,strided,8,3,0.0152,2.15579,32768
+SSE2 float64 stride=8,float64,131073,strided,8,4,0.0142,2.30761,32768
+SSE2 float64 stride=8,float64,131073,strided,8,5,0.0143,2.29147,32768
+SSE2 float64,float64,131073,gather,0,1,0.019,1.72463,32768
+SSE2 float64,float64,131073,gather,0,2,0.0197,1.66335,32768
+SSE2 float64,float64,131073,gather,0,3,0.0196,1.67184,32768
+SSE2 float64,float64,131073,gather,0,4,0.0196,1.67184,32768
+SSE2 float64,float64,131073,gather,0,5,0.0195,1.68041,32768
+SSE2 float64 stride=1,float64,524289,strided,1,1,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,2,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,3,0.0179,7.32246,131072
+SSE2 float64 stride=1,float64,524289,strided,1,4,0.018,7.28178,131072
+SSE2 float64 stride=1,float64,524289,strided,1,5,0.018,7.28178,131072
+SSE2 float64 stride=2,float64,524289,strided,2,1,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,2,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,3,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,4,0.0359,3.65103,131072
+SSE2 float64 stride=2,float64,524289,strided,2,5,0.0359,3.65103,131072
+SSE2 float64 stride=4,float64,524289,strided,4,1,0.0362,3.62077,131072
+SSE2 float64 stride=4,float64,524289,strided,4,2,0.0359,3.65103,131072
+SSE2 float64 stride=4,float64,524289,strided,4,3,0.036,3.64089,131072
+SSE2 float64 stride=4,float64,524289,strided,4,4,0.0359,3.65103,131072
+SSE2 float64 stride=4,float64,524289,strided,4,5,0.0359,3.65103,131072
+SSE2 float64 stride=8,float64,524289,strided,8,1,0.0565,2.31986,131072
+SSE2 float64 stride=8,float64,524289,strided,8,2,0.0559,2.34476,131072
+SSE2 float64 stride=8,float64,524289,strided,8,3,0.056,2.34057,131072
+SSE2 float64 stride=8,float64,524289,strided,8,4,0.0676,1.93893,131072
+SSE2 float64 stride=8,float64,524289,strided,8,5,0.056,2.34057,131072
+SSE2 float64,float64,524289,gather,0,1,0.0956,1.37105,131072
+SSE2 float64,float64,524289,gather,0,2,0.0903,1.45152,131072
+SSE2 float64,float64,524289,gather,0,3,0.0867,1.51179,131072
+SSE2 float64,float64,524289,gather,0,4,0.0905,1.44831,131072
+SSE2 float64,float64,524289,gather,0,5,0.0913,1.43562,131072
+AVX float32 stride=1,float32,8193,strided,1,1,0,inf,2048
+AVX float32 stride=1,float32,8193,strided,1,2,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,3,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,4,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,5,0.0001,20.48,2048
+AVX float32 stride=2,float32,8193,strided,2,1,0.0005,4.096,2048
+AVX float32 stride=2,float32,8193,strided,2,2,0.0006,3.41333,2048
+AVX float32 stride=2,float32,8193,strided,2,3,0.0006,3.41333,2048
+AVX float32 stride=2,float32,8193,strided,2,4,0.0006,3.41333,2048
+AVX float32 stride=2,float32,8193,strided,2,5,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,1,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,2,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,3,0.0005,4.096,2048
+AVX float32 stride=4,float32,8193,strided,4,4,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,5,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,1,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,2,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,3,0.0005,4.096,2048
+AVX float32 stride=8,float32,8193,strided,8,4,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,5,0.0006,3.41333,2048
+AVX float32,float32,8193,gather,0,1,0.0009,2.27556,2048
+AVX float32,float32,8193,gather,0,2,0.0008,2.56,2048
+AVX float32,float32,8193,gather,0,3,0.0009,2.27556,2048
+AVX float32,float32,8193,gather,0,4,0.0009,2.27556,2048
+AVX float32,float32,8193,gather,0,5,0.0008,2.56,2048
+AVX float32 stride=1,float32,32769,strided,1,1,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,2,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,3,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,4,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,5,0.0003,27.3067,8192
+AVX float32 stride=2,float32,32769,strided,2,1,0.0023,3.56174,8192
+AVX float32 stride=2,float32,32769,strided,2,2,0.0023,3.56174,8192
+AVX float32 stride=2,float32,32769,strided,2,3,0.0022,3.72364,8192
+AVX float32 stride=2,float32,32769,strided,2,4,0.0023,3.56174,8192
+AVX float32 stride=2,float32,32769,strided,2,5,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,1,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,2,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,3,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,4,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,5,0.0022,3.72364,8192
+AVX float32 stride=8,float32,32769,strided,8,1,0.0023,3.56174,8192
+AVX float32 stride=8,float32,32769,strided,8,2,0.0023,3.56174,8192
+AVX float32 stride=8,float32,32769,strided,8,3,0.0023,3.56174,8192
+AVX float32 stride=8,float32,32769,strided,8,4,0.0023,3.56174,8192
+AVX float32 stride=8,float32,32769,strided,8,5,0.0023,3.56174,8192
+AVX float32,float32,32769,gather,0,1,0.0039,2.10051,8192
+AVX float32,float32,32769,gather,0,2,0.004,2.048,8192
+AVX float32,float32,32769,gather,0,3,0.004,2.048,8192
+AVX float32,float32,32769,gather,0,4,0.0041,1.99805,8192
+AVX float32,float32,32769,gather,0,5,0.004,2.048,8192
+AVX float32 stride=1,float32,131073,strided,1,1,0.0012,27.3067,32768
+AVX float32 stride=1,float32,131073,strided,1,2,0.0011,29.7891,32768
+AVX float32 stride=1,float32,131073,strided,1,3,0.0011,29.7891,32768
+AVX float32 stride=1,float32,131073,strided,1,4,0.0012,27.3067,32768
+AVX float32 stride=1,float32,131073,strided,1,5,0.0012,27.3067,32768
+AVX float32 stride=2,float32,131073,strided,2,1,0.009,3.64089,32768
+AVX float32 stride=2,float32,131073,strided,2,2,0.009,3.64089,32768
+AVX float32 stride=2,float32,131073,strided,2,3,0.009,3.64089,32768
+AVX float32 stride=2,float32,131073,strided,2,4,0.0089,3.6818,32768
+AVX float32 stride=2,float32,131073,strided,2,5,0.0089,3.6818,32768
+AVX float32 stride=4,float32,131073,strided,4,1,0.009,3.64089,32768
+AVX float32 stride=4,float32,131073,strided,4,2,0.009,3.64089,32768
+AVX float32 stride=4,float32,131073,strided,4,3,0.0089,3.6818,32768
+AVX float32 stride=4,float32,131073,strided,4,4,0.0089,3.6818,32768
+AVX float32 stride=4,float32,131073,strided,4,5,0.0089,3.6818,32768
+AVX float32 stride=8,float32,131073,strided,8,1,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,2,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,3,0.0091,3.60088,32768
+AVX float32 stride=8,float32,131073,strided,8,4,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,5,0.0091,3.60088,32768
+AVX float32,float32,131073,gather,0,1,0.0208,1.57538,32768
+AVX float32,float32,131073,gather,0,2,0.0289,1.13384,32768
+AVX float32,float32,131073,gather,0,3,0.0196,1.67184,32768
+AVX float32,float32,131073,gather,0,4,0.0188,1.74298,32768
+AVX float32,float32,131073,gather,0,5,0.0197,1.66335,32768
+AVX float32 stride=1,float32,524289,strided,1,1,0.0049,26.7494,131072
+AVX float32 stride=1,float32,524289,strided,1,2,0.0046,28.4939,131072
+AVX float32 stride=1,float32,524289,strided,1,3,0.0046,28.4939,131072
+AVX float32 stride=1,float32,524289,strided,1,4,0.0045,29.1271,131072
+AVX float32 stride=1,float32,524289,strided,1,5,0.0045,29.1271,131072
+AVX float32 stride=2,float32,524289,strided,2,1,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,2,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,3,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,4,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,5,0.0358,3.66123,131072
+AVX float32 stride=4,float32,524289,strided,4,1,0.036,3.64089,131072
+AVX float32 stride=4,float32,524289,strided,4,2,0.0359,3.65103,131072
+AVX float32 stride=4,float32,524289,strided,4,3,0.0358,3.66123,131072
+AVX float32 stride=4,float32,524289,strided,4,4,0.0359,3.65103,131072
+AVX float32 stride=4,float32,524289,strided,4,5,0.0358,3.66123,131072
+AVX float32 stride=8,float32,524289,strided,8,1,0.0367,3.57144,131072
+AVX float32 stride=8,float32,524289,strided,8,2,0.036,3.64089,131072
+AVX float32 stride=8,float32,524289,strided,8,3,0.0359,3.65103,131072
+AVX float32 stride=8,float32,524289,strided,8,4,0.0359,3.65103,131072
+AVX float32 stride=8,float32,524289,strided,8,5,0.0359,3.65103,131072
+AVX float32,float32,524289,gather,0,1,0.0707,1.85392,131072
+AVX float32,float32,524289,gather,0,2,0.0716,1.83061,131072
+AVX float32,float32,524289,gather,0,3,0.0715,1.83317,131072
+AVX float32,float32,524289,gather,0,4,0.0714,1.83574,131072
+AVX float32,float32,524289,gather,0,5,0.0715,1.83317,131072
+AVX float32 stride=1,float32,8193,strided,1,1,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,2,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,3,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,4,0.0001,20.48,2048
+AVX float32 stride=1,float32,8193,strided,1,5,0.0001,20.48,2048
+AVX float32 stride=2,float32,8193,strided,2,1,0.0006,3.41333,2048
+AVX float32 stride=2,float32,8193,strided,2,2,0.0005,4.096,2048
+AVX float32 stride=2,float32,8193,strided,2,3,0.0006,3.41333,2048
+AVX float32 stride=2,float32,8193,strided,2,4,0.0006,3.41333,2048
+AVX float32 stride=2,float32,8193,strided,2,5,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,1,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,2,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,3,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,4,0.0006,3.41333,2048
+AVX float32 stride=4,float32,8193,strided,4,5,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,1,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,2,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,3,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,4,0.0006,3.41333,2048
+AVX float32 stride=8,float32,8193,strided,8,5,0.0005,4.096,2048
+AVX float32,float32,8193,gather,0,1,0.001,2.048,2048
+AVX float32,float32,8193,gather,0,2,0.001,2.048,2048
+AVX float32,float32,8193,gather,0,3,0.0009,2.27556,2048
+AVX float32,float32,8193,gather,0,4,0.001,2.048,2048
+AVX float32,float32,8193,gather,0,5,0.0009,2.27556,2048
+AVX float32 stride=1,float32,32769,strided,1,1,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,2,0.0004,20.48,8192
+AVX float32 stride=1,float32,32769,strided,1,3,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,4,0.0003,27.3067,8192
+AVX float32 stride=1,float32,32769,strided,1,5,0.0003,27.3067,8192
+AVX float32 stride=2,float32,32769,strided,2,1,0.0023,3.56174,8192
+AVX float32 stride=2,float32,32769,strided,2,2,0.0023,3.56174,8192
+AVX float32 stride=2,float32,32769,strided,2,3,0.0023,3.56174,8192
+AVX float32 stride=2,float32,32769,strided,2,4,0.0022,3.72364,8192
+AVX float32 stride=2,float32,32769,strided,2,5,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,1,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,2,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,3,0.0023,3.56174,8192
+AVX float32 stride=4,float32,32769,strided,4,4,0.0022,3.72364,8192
+AVX float32 stride=4,float32,32769,strided,4,5,0.0023,3.56174,8192
+AVX float32 stride=8,float32,32769,strided,8,1,0.0022,3.72364,8192
+AVX float32 stride=8,float32,32769,strided,8,2,0.0023,3.56174,8192
+AVX float32 stride=8,float32,32769,strided,8,3,0.0022,3.72364,8192
+AVX float32 stride=8,float32,32769,strided,8,4,0.0022,3.72364,8192
+AVX float32 stride=8,float32,32769,strided,8,5,0.0023,3.56174,8192
+AVX float32,float32,32769,gather,0,1,0.0039,2.10051,8192
+AVX float32,float32,32769,gather,0,2,0.004,2.048,8192
+AVX float32,float32,32769,gather,0,3,0.004,2.048,8192
+AVX float32,float32,32769,gather,0,4,0.0041,1.99805,8192
+AVX float32,float32,32769,gather,0,5,0.0041,1.99805,8192
+AVX float32 stride=1,float32,131073,strided,1,1,0.0011,29.7891,32768
+AVX float32 stride=1,float32,131073,strided,1,2,0.0012,27.3067,32768
+AVX float32 stride=1,float32,131073,strided,1,3,0.0012,27.3067,32768
+AVX float32 stride=1,float32,131073,strided,1,4,0.0011,29.7891,32768
+AVX float32 stride=1,float32,131073,strided,1,5,0.0011,29.7891,32768
+AVX float32 stride=2,float32,131073,strided,2,1,0.009,3.64089,32768
+AVX float32 stride=2,float32,131073,strided,2,2,0.0092,3.56174,32768
+AVX float32 stride=2,float32,131073,strided,2,3,0.009,3.64089,32768
+AVX float32 stride=2,float32,131073,strided,2,4,0.0089,3.6818,32768
+AVX float32 stride=2,float32,131073,strided,2,5,0.009,3.64089,32768
+AVX float32 stride=4,float32,131073,strided,4,1,0.0089,3.6818,32768
+AVX float32 stride=4,float32,131073,strided,4,2,0.009,3.64089,32768
+AVX float32 stride=4,float32,131073,strided,4,3,0.009,3.64089,32768
+AVX float32 stride=4,float32,131073,strided,4,4,0.009,3.64089,32768
+AVX float32 stride=4,float32,131073,strided,4,5,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,1,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,2,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,3,0.0091,3.60088,32768
+AVX float32 stride=8,float32,131073,strided,8,4,0.009,3.64089,32768
+AVX float32 stride=8,float32,131073,strided,8,5,0.009,3.64089,32768
+AVX float32,float32,131073,gather,0,1,0.0154,2.12779,32768
+AVX float32,float32,131073,gather,0,2,0.0167,1.96216,32768
+AVX float32,float32,131073,gather,0,3,0.0166,1.97398,32768
+AVX float32,float32,131073,gather,0,4,0.0166,1.97398,32768
+AVX float32,float32,131073,gather,0,5,0.0166,1.97398,32768
+AVX float32 stride=1,float32,524289,strided,1,1,0.0045,29.1271,131072
+AVX float32 stride=1,float32,524289,strided,1,2,0.0046,28.4939,131072
+AVX float32 stride=1,float32,524289,strided,1,3,0.0045,29.1271,131072
+AVX float32 stride=1,float32,524289,strided,1,4,0.0045,29.1271,131072
+AVX float32 stride=1,float32,524289,strided,1,5,0.0045,29.1271,131072
+AVX float32 stride=2,float32,524289,strided,2,1,0.036,3.64089,131072
+AVX float32 stride=2,float32,524289,strided,2,2,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,3,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,4,0.0358,3.66123,131072
+AVX float32 stride=2,float32,524289,strided,2,5,0.0358,3.66123,131072
+AVX float32 stride=4,float32,524289,strided,4,1,0.0363,3.6108,131072
+AVX float32 stride=4,float32,524289,strided,4,2,0.036,3.64089,131072
+AVX float32 stride=4,float32,524289,strided,4,3,0.037,3.54249,131072
+AVX float32 stride=4,float32,524289,strided,4,4,0.0362,3.62077,131072
+AVX float32 stride=4,float32,524289,strided,4,5,0.0406,3.22837,131072
+AVX float32 stride=8,float32,524289,strided,8,1,0.046,2.84939,131072
+AVX float32 stride=8,float32,524289,strided,8,2,0.0394,3.3267,131072
+AVX float32 stride=8,float32,524289,strided,8,3,0.0385,3.40447,131072
+AVX float32 stride=8,float32,524289,strided,8,4,0.0374,3.5046,131072
+AVX float32 stride=8,float32,524289,strided,8,5,0.0366,3.5812,131072
+AVX float32,float32,524289,gather,0,1,0.089,1.47272,131072
+AVX float32,float32,524289,gather,0,2,0.0796,1.64663,131072
+AVX float32,float32,524289,gather,0,3,0.0723,1.81289,131072
+AVX float32,float32,524289,gather,0,4,0.0716,1.83061,131072
+AVX float32,float32,524289,gather,0,5,0.0715,1.83317,131072
+AVX float64 stride=1,float64,8193,strided,1,1,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,2,0.0001,20.48,2048
+AVX float64 stride=1,float64,8193,strided,1,3,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,4,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,5,0.0001,20.48,2048
+AVX float64 stride=2,float64,8193,strided,2,1,0.0005,4.096,2048
+AVX float64 stride=2,float64,8193,strided,2,2,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,3,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,4,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,5,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,1,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,2,0.0005,4.096,2048
+AVX float64 stride=4,float64,8193,strided,4,3,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,4,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,5,0.0006,3.41333,2048
+AVX float64 stride=8,float64,8193,strided,8,1,0.0009,2.27556,2048
+AVX float64 stride=8,float64,8193,strided,8,2,0.0008,2.56,2048
+AVX float64 stride=8,float64,8193,strided,8,3,0.0008,2.56,2048
+AVX float64 stride=8,float64,8193,strided,8,4,0.0008,2.56,2048
+AVX float64 stride=8,float64,8193,strided,8,5,0.0008,2.56,2048
+AVX float64,float64,8193,gather,0,1,0.0013,1.57538,2048
+AVX float64,float64,8193,gather,0,2,0.0014,1.46286,2048
+AVX float64,float64,8193,gather,0,3,0.0014,1.46286,2048
+AVX float64,float64,8193,gather,0,4,0.0013,1.57538,2048
+AVX float64,float64,8193,gather,0,5,0.0013,1.57538,2048
+AVX float64 stride=1,float64,32769,strided,1,1,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,2,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,3,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,4,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,5,0.0006,13.6533,8192
+AVX float64 stride=2,float64,32769,strided,2,1,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,2,0.0022,3.72364,8192
+AVX float64 stride=2,float64,32769,strided,2,3,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,4,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,5,0.0022,3.72364,8192
+AVX float64 stride=4,float64,32769,strided,4,1,0.0023,3.56174,8192
+AVX float64 stride=4,float64,32769,strided,4,2,0.0022,3.72364,8192
+AVX float64 stride=4,float64,32769,strided,4,3,0.0023,3.56174,8192
+AVX float64 stride=4,float64,32769,strided,4,4,0.0022,3.72364,8192
+AVX float64 stride=4,float64,32769,strided,4,5,0.0023,3.56174,8192
+AVX float64 stride=8,float64,32769,strided,8,1,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,2,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,3,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,4,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,5,0.0031,2.64258,8192
+AVX float64,float64,32769,gather,0,1,0.0069,1.18725,8192
+AVX float64,float64,32769,gather,0,2,0.006,1.36533,8192
+AVX float64,float64,32769,gather,0,3,0.0056,1.46286,8192
+AVX float64,float64,32769,gather,0,4,0.0055,1.48945,8192
+AVX float64,float64,32769,gather,0,5,0.0054,1.51704,8192
+AVX float64 stride=1,float64,131073,strided,1,1,0.0023,14.247,32768
+AVX float64 stride=1,float64,131073,strided,1,2,0.0023,14.247,32768
+AVX float64 stride=1,float64,131073,strided,1,3,0.0023,14.247,32768
+AVX float64 stride=1,float64,131073,strided,1,4,0.0023,14.247,32768
+AVX float64 stride=1,float64,131073,strided,1,5,0.0022,14.8945,32768
+AVX float64 stride=2,float64,131073,strided,2,1,0.009,3.64089,32768
+AVX float64 stride=2,float64,131073,strided,2,2,0.0089,3.6818,32768
+AVX float64 stride=2,float64,131073,strided,2,3,0.009,3.64089,32768
+AVX float64 stride=2,float64,131073,strided,2,4,0.0089,3.6818,32768
+AVX float64 stride=2,float64,131073,strided,2,5,0.0089,3.6818,32768
+AVX float64 stride=4,float64,131073,strided,4,1,0.0099,3.3099,32768
+AVX float64 stride=4,float64,131073,strided,4,2,0.0092,3.56174,32768
+AVX float64 stride=4,float64,131073,strided,4,3,0.0091,3.60088,32768
+AVX float64 stride=4,float64,131073,strided,4,4,0.0091,3.60088,32768
+AVX float64 stride=4,float64,131073,strided,4,5,0.009,3.64089,32768
+AVX float64 stride=8,float64,131073,strided,8,1,0.0167,1.96216,32768
+AVX float64 stride=8,float64,131073,strided,8,2,0.0151,2.17007,32768
+AVX float64 stride=8,float64,131073,strided,8,3,0.0145,2.25986,32768
+AVX float64 stride=8,float64,131073,strided,8,4,0.0151,2.17007,32768
+AVX float64 stride=8,float64,131073,strided,8,5,0.0145,2.25986,32768
+AVX float64,float64,131073,gather,0,1,0.023,1.4247,32768
+AVX float64,float64,131073,gather,0,2,0.0227,1.44352,32768
+AVX float64,float64,131073,gather,0,3,0.0211,1.55299,32768
+AVX float64,float64,131073,gather,0,4,0.0206,1.59068,32768
+AVX float64,float64,131073,gather,0,5,0.0206,1.59068,32768
+AVX float64 stride=1,float64,524289,strided,1,1,0.0146,8.97753,131072
+AVX float64 stride=1,float64,524289,strided,1,2,0.0134,9.78149,131072
+AVX float64 stride=1,float64,524289,strided,1,3,0.01,13.1072,131072
+AVX float64 stride=1,float64,524289,strided,1,4,0.0095,13.7971,131072
+AVX float64 stride=1,float64,524289,strided,1,5,0.0093,14.0938,131072
+AVX float64 stride=2,float64,524289,strided,2,1,0.0366,3.5812,131072
+AVX float64 stride=2,float64,524289,strided,2,2,0.0365,3.59101,131072
+AVX float64 stride=2,float64,524289,strided,2,3,0.0364,3.60088,131072
+AVX float64 stride=2,float64,524289,strided,2,4,0.0364,3.60088,131072
+AVX float64 stride=2,float64,524289,strided,2,5,0.036,3.64089,131072
+AVX float64 stride=4,float64,524289,strided,4,1,0.0466,2.8127,131072
+AVX float64 stride=4,float64,524289,strided,4,2,0.0419,3.12821,131072
+AVX float64 stride=4,float64,524289,strided,4,3,0.0362,3.62077,131072
+AVX float64 stride=4,float64,524289,strided,4,4,0.036,3.64089,131072
+AVX float64 stride=4,float64,524289,strided,4,5,0.0359,3.65103,131072
+AVX float64 stride=8,float64,524289,strided,8,1,0.0566,2.31576,131072
+AVX float64 stride=8,float64,524289,strided,8,2,0.056,2.34057,131072
+AVX float64 stride=8,float64,524289,strided,8,3,0.0592,2.21405,131072
+AVX float64 stride=8,float64,524289,strided,8,4,0.0565,2.31986,131072
+AVX float64 stride=8,float64,524289,strided,8,5,0.0561,2.3364,131072
+AVX float64,float64,524289,gather,0,1,0.0898,1.4596,131072
+AVX float64,float64,524289,gather,0,2,0.085,1.54202,131072
+AVX float64,float64,524289,gather,0,3,0.0794,1.65078,131072
+AVX float64,float64,524289,gather,0,4,0.0787,1.66546,131072
+AVX float64,float64,524289,gather,0,5,0.0781,1.67826,131072
+AVX float64 stride=1,float64,8193,strided,1,1,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,2,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,3,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,4,0.0002,10.24,2048
+AVX float64 stride=1,float64,8193,strided,1,5,0.0002,10.24,2048
+AVX float64 stride=2,float64,8193,strided,2,1,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,2,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,3,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,4,0.0006,3.41333,2048
+AVX float64 stride=2,float64,8193,strided,2,5,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,1,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,2,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,3,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,4,0.0006,3.41333,2048
+AVX float64 stride=4,float64,8193,strided,4,5,0.0006,3.41333,2048
+AVX float64 stride=8,float64,8193,strided,8,1,0.0009,2.27556,2048
+AVX float64 stride=8,float64,8193,strided,8,2,0.0008,2.56,2048
+AVX float64 stride=8,float64,8193,strided,8,3,0.0008,2.56,2048
+AVX float64 stride=8,float64,8193,strided,8,4,0.0007,2.92571,2048
+AVX float64 stride=8,float64,8193,strided,8,5,0.0008,2.56,2048
+AVX float64,float64,8193,gather,0,1,0.0013,1.57538,2048
+AVX float64,float64,8193,gather,0,2,0.0013,1.57538,2048
+AVX float64,float64,8193,gather,0,3,0.0015,1.36533,2048
+AVX float64,float64,8193,gather,0,4,0.0012,1.70667,2048
+AVX float64,float64,8193,gather,0,5,0.0013,1.57538,2048
+AVX float64 stride=1,float64,32769,strided,1,1,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,2,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,3,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,4,0.0006,13.6533,8192
+AVX float64 stride=1,float64,32769,strided,1,5,0.0006,13.6533,8192
+AVX float64 stride=2,float64,32769,strided,2,1,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,2,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,3,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,4,0.0023,3.56174,8192
+AVX float64 stride=2,float64,32769,strided,2,5,0.0023,3.56174,8192
+AVX float64 stride=4,float64,32769,strided,4,1,0.0022,3.72364,8192
+AVX float64 stride=4,float64,32769,strided,4,2,0.0022,3.72364,8192
+AVX float64 stride=4,float64,32769,strided,4,3,0.0046,1.78087,8192
+AVX float64 stride=4,float64,32769,strided,4,4,0.0023,3.56174,8192
+AVX float64 stride=4,float64,32769,strided,4,5,0.0023,3.56174,8192
+AVX float64 stride=8,float64,32769,strided,8,1,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,2,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,3,0.0031,2.64258,8192
+AVX float64 stride=8,float64,32769,strided,8,4,0.0032,2.56,8192
+AVX float64 stride=8,float64,32769,strided,8,5,0.0031,2.64258,8192
+AVX float64,float64,32769,gather,0,1,0.0048,1.70667,8192
+AVX float64,float64,32769,gather,0,2,0.0051,1.60627,8192
+AVX float64,float64,32769,gather,0,3,0.0053,1.54566,8192
+AVX float64,float64,32769,gather,0,4,0.0051,1.60627,8192
+AVX float64,float64,32769,gather,0,5,0.0051,1.60627,8192
+AVX float64 stride=1,float64,131073,strided,1,1,0.0022,14.8945,32768
+AVX float64 stride=1,float64,131073,strided,1,2,0.0023,14.247,32768
+AVX float64 stride=1,float64,131073,strided,1,3,0.0023,14.247,32768
+AVX float64 stride=1,float64,131073,strided,1,4,0.0022,14.8945,32768
+AVX float64 stride=1,float64,131073,strided,1,5,0.0023,14.247,32768
+AVX float64 stride=2,float64,131073,strided,2,1,0.0089,3.6818,32768
+AVX float64 stride=2,float64,131073,strided,2,2,0.0089,3.6818,32768
+AVX float64 stride=2,float64,131073,strided,2,3,0.0089,3.6818,32768
+AVX float64 stride=2,float64,131073,strided,2,4,0.0089,3.6818,32768
+AVX float64 stride=2,float64,131073,strided,2,5,0.009,3.64089,32768
+AVX float64 stride=4,float64,131073,strided,4,1,0.0097,3.37814,32768
+AVX float64 stride=4,float64,131073,strided,4,2,0.0091,3.60088,32768
+AVX float64 stride=4,float64,131073,strided,4,3,0.009,3.64089,32768
+AVX float64 stride=4,float64,131073,strided,4,4,0.009,3.64089,32768
+AVX float64 stride=4,float64,131073,strided,4,5,0.0091,3.60088,32768
+AVX float64 stride=8,float64,131073,strided,8,1,0.0171,1.91626,32768
+AVX float64 stride=8,float64,131073,strided,8,2,0.0154,2.12779,32768
+AVX float64 stride=8,float64,131073,strided,8,3,0.0152,2.15579,32768
+AVX float64 stride=8,float64,131073,strided,8,4,0.0144,2.27556,32768
+AVX float64 stride=8,float64,131073,strided,8,5,0.0143,2.29147,32768
+AVX float64,float64,131073,gather,0,1,0.0245,1.33747,32768
+AVX float64,float64,131073,gather,0,2,0.0217,1.51005,32768
+AVX float64,float64,131073,gather,0,3,0.021,1.56038,32768
+AVX float64,float64,131073,gather,0,4,0.0202,1.62218,32768
+AVX float64,float64,131073,gather,0,5,0.0201,1.63025,32768
+AVX float64 stride=1,float64,524289,strided,1,1,0.0129,10.1606,131072
+AVX float64 stride=1,float64,524289,strided,1,2,0.0109,12.025,131072
+AVX float64 stride=1,float64,524289,strided,1,3,0.0124,10.5703,131072
+AVX float64 stride=1,float64,524289,strided,1,4,0.0107,12.2497,131072
+AVX float64 stride=1,float64,524289,strided,1,5,0.0096,13.6533,131072
+AVX float64 stride=2,float64,524289,strided,2,1,0.0378,3.46751,131072
+AVX float64 stride=2,float64,524289,strided,2,2,0.0368,3.56174,131072
+AVX float64 stride=2,float64,524289,strided,2,3,0.0369,3.55209,131072
+AVX float64 stride=2,float64,524289,strided,2,4,0.0361,3.6308,131072
+AVX float64 stride=2,float64,524289,strided,2,5,0.0362,3.62077,131072
+AVX float64 stride=4,float64,524289,strided,4,1,0.0456,2.87439,131072
+AVX float64 stride=4,float64,524289,strided,4,2,0.0392,3.34367,131072
+AVX float64 stride=4,float64,524289,strided,4,3,0.0401,3.26863,131072
+AVX float64 stride=4,float64,524289,strided,4,4,0.0395,3.31828,131072
+AVX float64 stride=4,float64,524289,strided,4,5,0.0379,3.45836,131072
+AVX float64 stride=8,float64,524289,strided,8,1,0.0803,1.63228,131072
+AVX float64 stride=8,float64,524289,strided,8,2,0.071,1.84608,131072
+AVX float64 stride=8,float64,524289,strided,8,3,0.0562,2.33224,131072
+AVX float64 stride=8,float64,524289,strided,8,4,0.056,2.34057,131072
+AVX float64 stride=8,float64,524289,strided,8,5,0.0566,2.31576,131072
+AVX float64,float64,524289,gather,0,1,0.107,1.22497,131072
+AVX float64,float64,524289,gather,0,2,0.0769,1.70445,131072
+AVX float64,float64,524289,gather,0,3,0.0762,1.7201,131072
+AVX float64,float64,524289,gather,0,4,0.0763,1.71785,131072
+AVX float64,float64,524289,gather,0,5,0.0761,1.72237,131072
+AVX-512 f32 stride=1,float32,8193,strided,1,1,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,2,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,3,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,4,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,5,0.0001,20.48,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,1,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,2,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,3,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,4,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,5,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,1,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,2,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,3,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,4,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,5,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,1,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,2,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,3,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,4,0.0005,4.096,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,5,0.0005,4.096,2048
+AVX-512 f32,float32,8193,gather,0,1,0.001,2.048,2048
+AVX-512 f32,float32,8193,gather,0,2,0.0011,1.86182,2048
+AVX-512 f32,float32,8193,gather,0,3,0.0009,2.27556,2048
+AVX-512 f32,float32,8193,gather,0,4,0.0009,2.27556,2048
+AVX-512 f32,float32,8193,gather,0,5,0.0009,2.27556,2048
+AVX-512 f32 stride=1,float32,32769,strided,1,1,0.0002,40.96,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,2,0.0003,27.3067,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,3,0.0002,40.96,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,4,0.0002,40.96,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,5,0.0002,40.96,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,1,0.0023,3.56174,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,2,0.0022,3.72364,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,3,0.0022,3.72364,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,4,0.0023,3.56174,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,5,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,1,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,2,0.0022,3.72364,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,3,0.0022,3.72364,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,4,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,5,0.0023,3.56174,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,1,0.0023,3.56174,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,2,0.0023,3.56174,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,3,0.0023,3.56174,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,4,0.0022,3.72364,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,5,0.0023,3.56174,8192
+AVX-512 f32,float32,32769,gather,0,1,0.0037,2.21405,8192
+AVX-512 f32,float32,32769,gather,0,2,0.0041,1.99805,8192
+AVX-512 f32,float32,32769,gather,0,3,0.0042,1.95048,8192
+AVX-512 f32,float32,32769,gather,0,4,0.004,2.048,8192
+AVX-512 f32,float32,32769,gather,0,5,0.0042,1.95048,8192
+AVX-512 f32 stride=1,float32,131073,strided,1,1,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,2,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,3,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,4,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,5,0.0008,40.96,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,1,0.009,3.64089,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,2,0.009,3.64089,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,3,0.009,3.64089,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,4,0.009,3.64089,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,5,0.009,3.64089,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,1,0.0089,3.6818,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,2,0.009,3.64089,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,3,0.009,3.64089,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,4,0.0089,3.6818,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,5,0.009,3.64089,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,1,0.0091,3.60088,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,2,0.0091,3.60088,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,3,0.009,3.64089,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,4,0.009,3.64089,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,5,0.0096,3.41333,32768
+AVX-512 f32,float32,131073,gather,0,1,0.0214,1.53121,32768
+AVX-512 f32,float32,131073,gather,0,2,0.0211,1.55299,32768
+AVX-512 f32,float32,131073,gather,0,3,0.0205,1.59844,32768
+AVX-512 f32,float32,131073,gather,0,4,0.0201,1.63025,32768
+AVX-512 f32,float32,131073,gather,0,5,0.0199,1.64663,32768
+AVX-512 f32 stride=1,float32,524289,strided,1,1,0.003,43.6907,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,2,0.0031,42.2813,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,3,0.003,43.6907,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,4,0.0031,42.2813,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,5,0.0031,42.2813,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,1,0.036,3.64089,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,2,0.0359,3.65103,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,3,0.0359,3.65103,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,4,0.0358,3.66123,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,5,0.0358,3.66123,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,1,0.0365,3.59101,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,2,0.0361,3.6308,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,3,0.0362,3.62077,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,4,0.0361,3.6308,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,5,0.0359,3.65103,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,1,0.0484,2.7081,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,2,0.036,3.64089,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,3,0.0359,3.65103,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,4,0.036,3.64089,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,5,0.0359,3.65103,131072
+AVX-512 f32,float32,524289,gather,0,1,0.0728,1.80044,131072
+AVX-512 f32,float32,524289,gather,0,2,0.072,1.82044,131072
+AVX-512 f32,float32,524289,gather,0,3,0.0715,1.83317,131072
+AVX-512 f32,float32,524289,gather,0,4,0.0714,1.83574,131072
+AVX-512 f32,float32,524289,gather,0,5,0.0716,1.83061,131072
+AVX-512 f32 stride=1,float32,8193,strided,1,1,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,2,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,3,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,4,0.0001,20.48,2048
+AVX-512 f32 stride=1,float32,8193,strided,1,5,0.0001,20.48,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,1,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,2,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,3,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,4,0.0006,3.41333,2048
+AVX-512 f32 stride=2,float32,8193,strided,2,5,0.0005,4.096,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,1,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,2,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,3,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,4,0.0006,3.41333,2048
+AVX-512 f32 stride=4,float32,8193,strided,4,5,0.0005,4.096,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,1,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,2,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,3,0.0006,3.41333,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,4,0.0007,2.92571,2048
+AVX-512 f32 stride=8,float32,8193,strided,8,5,0.0006,3.41333,2048
+AVX-512 f32,float32,8193,gather,0,1,0.0009,2.27556,2048
+AVX-512 f32,float32,8193,gather,0,2,0.0009,2.27556,2048
+AVX-512 f32,float32,8193,gather,0,3,0.0009,2.27556,2048
+AVX-512 f32,float32,8193,gather,0,4,0.0009,2.27556,2048
+AVX-512 f32,float32,8193,gather,0,5,0.0009,2.27556,2048
+AVX-512 f32 stride=1,float32,32769,strided,1,1,0.0002,40.96,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,2,0.0002,40.96,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,3,0.0002,40.96,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,4,0.0003,27.3067,8192
+AVX-512 f32 stride=1,float32,32769,strided,1,5,0.0003,27.3067,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,1,0.0022,3.72364,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,2,0.0023,3.56174,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,3,0.0023,3.56174,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,4,0.0022,3.72364,8192
+AVX-512 f32 stride=2,float32,32769,strided,2,5,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,1,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,2,0.0022,3.72364,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,3,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,4,0.0023,3.56174,8192
+AVX-512 f32 stride=4,float32,32769,strided,4,5,0.0022,3.72364,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,1,0.0022,3.72364,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,2,0.0022,3.72364,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,3,0.0023,3.56174,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,4,0.0022,3.72364,8192
+AVX-512 f32 stride=8,float32,32769,strided,8,5,0.0023,3.56174,8192
+AVX-512 f32,float32,32769,gather,0,1,0.0039,2.10051,8192
+AVX-512 f32,float32,32769,gather,0,2,0.0041,1.99805,8192
+AVX-512 f32,float32,32769,gather,0,3,0.0041,1.99805,8192
+AVX-512 f32,float32,32769,gather,0,4,0.004,2.048,8192
+AVX-512 f32,float32,32769,gather,0,5,0.004,2.048,8192
+AVX-512 f32 stride=1,float32,131073,strided,1,1,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,2,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,3,0.0009,36.4089,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,4,0.0008,40.96,32768
+AVX-512 f32 stride=1,float32,131073,strided,1,5,0.0008,40.96,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,1,0.009,3.64089,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,2,0.0089,3.6818,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,3,0.0089,3.6818,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,4,0.009,3.64089,32768
+AVX-512 f32 stride=2,float32,131073,strided,2,5,0.0089,3.6818,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,1,0.009,3.64089,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,2,0.009,3.64089,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,3,0.0089,3.6818,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,4,0.009,3.64089,32768
+AVX-512 f32 stride=4,float32,131073,strided,4,5,0.009,3.64089,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,1,0.0092,3.56174,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,2,0.009,3.64089,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,3,0.0091,3.60088,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,4,0.0091,3.60088,32768
+AVX-512 f32 stride=8,float32,131073,strided,8,5,0.009,3.64089,32768
+AVX-512 f32,float32,131073,gather,0,1,0.019,1.72463,32768
+AVX-512 f32,float32,131073,gather,0,2,0.0181,1.81039,32768
+AVX-512 f32,float32,131073,gather,0,3,0.0181,1.81039,32768
+AVX-512 f32,float32,131073,gather,0,4,0.0174,1.88322,32768
+AVX-512 f32,float32,131073,gather,0,5,0.0198,1.65495,32768
+AVX-512 f32 stride=1,float32,524289,strided,1,1,0.0034,38.5506,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,2,0.0034,38.5506,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,3,0.0034,38.5506,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,4,0.0034,38.5506,131072
+AVX-512 f32 stride=1,float32,524289,strided,1,5,0.0034,38.5506,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,1,0.0362,3.62077,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,2,0.0358,3.66123,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,3,0.0358,3.66123,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,4,0.0358,3.66123,131072
+AVX-512 f32 stride=2,float32,524289,strided,2,5,0.0358,3.66123,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,1,0.0363,3.6108,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,2,0.0358,3.66123,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,3,0.0358,3.66123,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,4,0.0362,3.62077,131072
+AVX-512 f32 stride=4,float32,524289,strided,4,5,0.0359,3.65103,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,1,0.0442,2.96543,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,2,0.0364,3.60088,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,3,0.0359,3.65103,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,4,0.0359,3.65103,131072
+AVX-512 f32 stride=8,float32,524289,strided,8,5,0.0359,3.65103,131072
+AVX-512 f32,float32,524289,gather,0,1,0.0719,1.82298,131072
+AVX-512 f32,float32,524289,gather,0,2,0.0711,1.84349,131072
+AVX-512 f32,float32,524289,gather,0,3,0.0717,1.82806,131072
+AVX-512 f32,float32,524289,gather,0,4,0.0715,1.83317,131072
+AVX-512 f32,float32,524289,gather,0,5,0.0715,1.83317,131072
+AVX-512 f64 stride=1,float64,8193,strided,1,1,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,2,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,3,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,4,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,5,0.0002,10.24,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,1,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,2,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,3,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,4,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,5,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,1,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,2,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,3,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,4,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,5,0.0006,3.41333,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,1,0.0009,2.27556,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,2,0.0009,2.27556,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,3,0.0009,2.27556,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,4,0.0009,2.27556,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,5,0.0008,2.56,2048
+AVX-512 f64,float64,8193,gather,0,1,0.0014,1.46286,2048
+AVX-512 f64,float64,8193,gather,0,2,0.0013,1.57538,2048
+AVX-512 f64,float64,8193,gather,0,3,0.0013,1.57538,2048
+AVX-512 f64,float64,8193,gather,0,4,0.0012,1.70667,2048
+AVX-512 f64,float64,8193,gather,0,5,0.0012,1.70667,2048
+AVX-512 f64 stride=1,float64,32769,strided,1,1,0.0004,20.48,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,2,0.0004,20.48,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,3,0.0005,16.384,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,4,0.0004,20.48,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,5,0.0004,20.48,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,1,0.0023,3.56174,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,2,0.0023,3.56174,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,3,0.0023,3.56174,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,4,0.0023,3.56174,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,5,0.0023,3.56174,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,1,0.0023,3.56174,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,2,0.0023,3.56174,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,3,0.0022,3.72364,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,4,0.0023,3.56174,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,5,0.0023,3.56174,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,1,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,2,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,3,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,4,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,5,0.0031,2.64258,8192
+AVX-512 f64,float64,32769,gather,0,1,0.005,1.6384,8192
+AVX-512 f64,float64,32769,gather,0,2,0.0052,1.57538,8192
+AVX-512 f64,float64,32769,gather,0,3,0.0051,1.60627,8192
+AVX-512 f64,float64,32769,gather,0,4,0.0052,1.57538,8192
+AVX-512 f64,float64,32769,gather,0,5,0.0051,1.60627,8192
+AVX-512 f64 stride=1,float64,131073,strided,1,1,0.0015,21.8453,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,2,0.0016,20.48,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,3,0.0016,20.48,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,4,0.0016,20.48,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,5,0.0016,20.48,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,1,0.009,3.64089,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,2,0.009,3.64089,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,3,0.0091,3.60088,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,4,0.009,3.64089,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,5,0.009,3.64089,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,1,0.0098,3.34367,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,2,0.0094,3.48596,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,3,0.0091,3.60088,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,4,0.0093,3.52344,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,5,0.009,3.64089,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,1,0.0177,1.8513,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,2,0.0162,2.02272,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,3,0.0146,2.24438,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,4,0.0143,2.29147,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,5,0.0174,1.88322,32768
+AVX-512 f64,float64,131073,gather,0,1,0.0209,1.56785,32768
+AVX-512 f64,float64,131073,gather,0,2,0.0203,1.61419,32768
+AVX-512 f64,float64,131073,gather,0,3,0.02,1.6384,32768
+AVX-512 f64,float64,131073,gather,0,4,0.0199,1.64663,32768
+AVX-512 f64,float64,131073,gather,0,5,0.0197,1.66335,32768
+AVX-512 f64 stride=1,float64,524289,strided,1,1,0.0104,12.6031,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,2,0.0084,15.6038,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,3,0.0076,17.2463,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,4,0.0074,17.7124,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,5,0.0082,15.9844,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,1,0.037,3.54249,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,2,0.0362,3.62077,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,3,0.0359,3.65103,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,4,0.036,3.64089,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,5,0.0358,3.66123,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,1,0.0425,3.08405,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,2,0.0359,3.65103,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,3,0.0359,3.65103,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,4,0.0359,3.65103,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,5,0.036,3.64089,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,1,0.0614,2.13472,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,2,0.0561,2.3364,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,3,0.0562,2.33224,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,4,0.0558,2.34896,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,5,0.0687,1.90789,131072
+AVX-512 f64,float64,524289,gather,0,1,0.1141,1.14875,131072
+AVX-512 f64,float64,524289,gather,0,2,0.092,1.4247,131072
+AVX-512 f64,float64,524289,gather,0,3,0.0915,1.43248,131072
+AVX-512 f64,float64,524289,gather,0,4,0.0805,1.62822,131072
+AVX-512 f64,float64,524289,gather,0,5,0.0778,1.68473,131072
+AVX-512 f64 stride=1,float64,8193,strided,1,1,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,2,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,3,0.0002,10.24,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,4,0.0001,20.48,2048
+AVX-512 f64 stride=1,float64,8193,strided,1,5,0.0001,20.48,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,1,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,2,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,3,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,4,0.0006,3.41333,2048
+AVX-512 f64 stride=2,float64,8193,strided,2,5,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,1,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,2,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,3,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,4,0.0006,3.41333,2048
+AVX-512 f64 stride=4,float64,8193,strided,4,5,0.0006,3.41333,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,1,0.0007,2.92571,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,2,0.0008,2.56,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,3,0.0007,2.92571,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,4,0.0008,2.56,2048
+AVX-512 f64 stride=8,float64,8193,strided,8,5,0.0008,2.56,2048
+AVX-512 f64,float64,8193,gather,0,1,0.0012,1.70667,2048
+AVX-512 f64,float64,8193,gather,0,2,0.0012,1.70667,2048
+AVX-512 f64,float64,8193,gather,0,3,0.0013,1.57538,2048
+AVX-512 f64,float64,8193,gather,0,4,0.0014,1.46286,2048
+AVX-512 f64,float64,8193,gather,0,5,0.0015,1.36533,2048
+AVX-512 f64 stride=1,float64,32769,strided,1,1,0.0005,16.384,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,2,0.0004,20.48,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,3,0.0005,16.384,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,4,0.0004,20.48,8192
+AVX-512 f64 stride=1,float64,32769,strided,1,5,0.0005,16.384,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,1,0.0022,3.72364,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,2,0.0022,3.72364,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,3,0.0023,3.56174,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,4,0.0022,3.72364,8192
+AVX-512 f64 stride=2,float64,32769,strided,2,5,0.0022,3.72364,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,1,0.0022,3.72364,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,2,0.0023,3.56174,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,3,0.0023,3.56174,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,4,0.0022,3.72364,8192
+AVX-512 f64 stride=4,float64,32769,strided,4,5,0.0023,3.56174,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,1,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,2,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,3,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,4,0.0031,2.64258,8192
+AVX-512 f64 stride=8,float64,32769,strided,8,5,0.0031,2.64258,8192
+AVX-512 f64,float64,32769,gather,0,1,0.0054,1.51704,8192
+AVX-512 f64,float64,32769,gather,0,2,0.0052,1.57538,8192
+AVX-512 f64,float64,32769,gather,0,3,0.0055,1.48945,8192
+AVX-512 f64,float64,32769,gather,0,4,0.0054,1.51704,8192
+AVX-512 f64,float64,32769,gather,0,5,0.0052,1.57538,8192
+AVX-512 f64 stride=1,float64,131073,strided,1,1,0.0016,20.48,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,2,0.0016,20.48,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,3,0.0016,20.48,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,4,0.0017,19.2753,32768
+AVX-512 f64 stride=1,float64,131073,strided,1,5,0.0016,20.48,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,1,0.009,3.64089,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,2,0.0089,3.6818,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,3,0.0089,3.6818,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,4,0.0094,3.48596,32768
+AVX-512 f64 stride=2,float64,131073,strided,2,5,0.009,3.64089,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,1,0.0091,3.60088,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,2,0.009,3.64089,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,3,0.009,3.64089,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,4,0.009,3.64089,32768
+AVX-512 f64 stride=4,float64,131073,strided,4,5,0.0091,3.60088,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,1,0.0143,2.29147,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,2,0.0143,2.29147,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,3,0.0142,2.30761,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,4,0.0144,2.27556,32768
+AVX-512 f64 stride=8,float64,131073,strided,8,5,0.0144,2.27556,32768
+AVX-512 f64,float64,131073,gather,0,1,0.0192,1.70667,32768
+AVX-512 f64,float64,131073,gather,0,2,0.0195,1.68041,32768
+AVX-512 f64,float64,131073,gather,0,3,0.0195,1.68041,32768
+AVX-512 f64,float64,131073,gather,0,4,0.0195,1.68041,32768
+AVX-512 f64,float64,131073,gather,0,5,0.0196,1.67184,32768
+AVX-512 f64 stride=1,float64,524289,strided,1,1,0.0076,17.2463,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,2,0.0076,17.2463,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,3,0.0076,17.2463,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,4,0.0076,17.2463,131072
+AVX-512 f64 stride=1,float64,524289,strided,1,5,0.0076,17.2463,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,1,0.0359,3.65103,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,2,0.0358,3.66123,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,3,0.0363,3.6108,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,4,0.0358,3.66123,131072
+AVX-512 f64 stride=2,float64,524289,strided,2,5,0.0359,3.65103,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,1,0.0365,3.59101,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,2,0.0359,3.65103,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,3,0.0387,3.38687,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,4,0.0362,3.62077,131072
+AVX-512 f64 stride=4,float64,524289,strided,4,5,0.036,3.64089,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,1,0.0581,2.25597,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,2,0.0563,2.3281,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,3,0.0567,2.31168,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,4,0.0565,2.31986,131072
+AVX-512 f64 stride=8,float64,524289,strided,8,5,0.0562,2.33224,131072
+AVX-512 f64,float64,524289,gather,0,1,0.0781,1.67826,131072
+AVX-512 f64,float64,524289,gather,0,2,0.076,1.72463,131072
+AVX-512 f64,float64,524289,gather,0,3,0.076,1.72463,131072
+AVX-512 f64,float64,524289,gather,0,4,0.0762,1.7201,131072
+AVX-512 f64,float64,524289,gather,0,5,0.0763,1.71785,131072
