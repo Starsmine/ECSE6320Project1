@@ -1,0 +1,79 @@
+[global]
+# Basic settings
+ioengine=libaio          # Use Linux asynchronous I/O
+direct=1                 # Use O_DIRECT
+time_based=1            # Run for a specified time
+runtime=30              # 30 second runtime
+ramp_time=5             # 5 second ramp time
+
+# Test file settings
+size=4G                 # Test file size
+filename=/dev/nvme0n1   # Change this to your device
+buffer_compress_percentage=0  # Incompressible data
+buffer_pattern=0xdeadbeef    # Recognizable pattern
+
+# Reporting settings
+group_reporting=1
+percentile_list=50:95:99:99.9
+log_avg_msec=1000      # 1-second intervals for logging
+write_bw_log=results   # Write bandwidth log
+write_lat_log=results  # Write latency log
+write_iops_log=results # Write IOPS log
+
+[precondition]
+description=Precondition the drive with random writes
+rw=randwrite
+bs=128k
+iodepth=32
+numjobs=4
+runtime=600            # 10 minutes preconditioning
+stonewall             # Wait for previous jobs to complete
+
+[4k-randread-qd1]
+description=4KB Random Read QD1
+rw=randread
+bs=4k
+iodepth=1
+numjobs=1
+stonewall
+new_group=1           # Start new reporting group
+
+[4k-randwrite-qd1]
+description=4KB Random Write QD1
+rw=randwrite
+bs=4k
+iodepth=1
+numjobs=1
+fsync=1              # Force writes to disk
+stonewall
+new_group=1
+
+[128k-seqread-qd1]
+description=128KB Sequential Read QD1
+rw=read
+bs=128k
+iodepth=1
+numjobs=1
+stonewall
+new_group=1
+
+[128k-seqwrite-qd1]
+description=128KB Sequential Write QD1
+rw=write
+bs=128k
+iodepth=1
+numjobs=1
+fsync=1
+stonewall
+new_group=1
+
+# Optional verification section
+[verify]
+description=Verify written data
+rw=read
+bs=128k
+iodepth=1
+numjobs=1
+verify=md5           # Use MD5 for verification
+verify_fatal=1       # Stop on verification error
+stonewall

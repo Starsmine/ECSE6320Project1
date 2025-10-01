@@ -1,0 +1,52 @@
+[global]
+direct=1
+time_based=1
+runtime=30
+ramp_time=5
+norandommap=1
+randrepeat=0
+percentile_list=50:95:99:99.9
+lat_percentiles=1
+size=4G
+directory=/mnt/g  # Use G: drive for tests
+ioengine=libaio
+filename=${DIRECTORY}/fio_testfile
+thread=1  # Use threading for better performance
+cpus_allowed_policy=split  # Spread load across CPUs
+gtod_reduce=0  # Reduce gettimeofday() calls
+disable_lat=0  # Ensure latency stats are collected
+disable_slat=0  # Collect submission latency
+disable_clat=0  # Collect completion latency
+log_avg_msec=1000 
+
+[4k-randread-qd1]
+name=4k-randread-qd1
+filename=${DIRECTORY}/fio_testfile
+rw=randread
+bs=4k
+iodepth=1
+numjobs=1
+
+[4k-randwrite-qd1]
+name=4k-randwrite-qd1
+filename=${DIRECTORY}/fio_testfile
+rw=randwrite
+bs=4k
+iodepth=1
+numjobs=1
+
+[128k-seqread-qd1]
+name=128k-seqread-qd1
+filename=${DIRECTORY}/fio_testfile
+rw=read
+bs=128k
+iodepth=1
+numjobs=1
+
+[128k-seqwrite-qd1]
+name=128k-seqwrite-qd1
+filename=${DIRECTORY}/fio_testfile
+rw=write
+bs=128k
+iodepth=1
+numjobs=1

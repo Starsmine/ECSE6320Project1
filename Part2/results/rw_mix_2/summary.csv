@@ -1,0 +1,5 @@
+"R/W Ratio","Latency_ns","Bandwidth_MBps","Latency_cycles"
+"100% Read","0","0","N/A"
+"75% Read/ 25% Write","0","0","N/A"
+"70% Read / 30% Write","0","0","N/A"
+"50% Read / 50% Write","0","0","N/A"
