@@ -33,5 +33,19 @@ Complier Flags: for project 1
                 "-mavx512f",
                 "-fno-tree-vectorize",
 
+## Project Structure
+
+This repository contains several projects demonstrating SIMD performance analysis and optimization:
+
+### Project Reports
+- [**Project1Saxpy**](./Project1Saxpy/README.md) - SAXPY (Single-precision A*X Plus Y) SIMD implementation
+- [**Project1DotProduct**](./Project1DotProduct/README.md) - Dot product SIMD optimization and benchmarking
+- [**Project13dpointstencil**](./Project13dpointstencil/README.md) - 3D point stencil operations with SIMD vectorization
+- [**Part2**](./Part2/README.md) - Cache hierarchy and memory access pattern analysis
+- [**Part3**](./Part3/README.md) - SSD performance profiling and I/O benchmarking  
+
+
+Each project folder contains its own detailed README with specific instructions, results, and analysis.
+
 
 
