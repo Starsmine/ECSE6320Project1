@@ -37,6 +37,8 @@ Complier Flags: for project 1
 
 This repository contains several projects demonstrating SIMD performance analysis and optimization:
 
+The hours spent on this project exceed 40 and it is not in a state I am happy with. Lots of benchmarking errors and malformed data still exist. 
+
 ### Project Reports
 - [**Project1Saxpy**](./Project1Saxpy/README.md) - SAXPY (Single-precision A*X Plus Y) SIMD implementation
 - [**Project1DotProduct**](./Project1DotProduct/README.md) - Dot product SIMD optimization and benchmarking
@@ -45,7 +47,7 @@ This repository contains several projects demonstrating SIMD performance analysi
 - [**Part3**](./Part3/README.md) - SSD performance profiling and I/O benchmarking  
 
 
-Each project folder contains its own detailed README with specific instructions, results, and analysis.
+Each project folder contains its own Report
 
 
 
