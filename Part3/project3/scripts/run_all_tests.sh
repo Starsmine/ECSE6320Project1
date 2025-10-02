@@ -12,7 +12,6 @@ fi
 
 echo "Cleaning up previous test files and results..."
 rm -rf "${PROJECT_DIR}"/results_*
-rm -f /mnt/g/fio_testfile*
 
 # Create results directory with timestamp
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)

@@ -3,26 +3,20 @@
 [![Back to Main README](https://img.shields.io/badge/Back%20to-Main%20README-blue)](../README.md)
 
 ## Overview
-This section focuses on comprehensive SSD performance analysis using FIO (Flexible I/O Tester) and custom benchmarking methodologies. The project explores various I/O patterns, queue depths, and block sizes to characterize storage performance.
+This Bench does not work as I wanted it to. Windows version for me was bugged so I switched to using WSL, but then FUSE spoiled all results. Both issues took quite a few hours to figure out so my next step would be to install a full linux distro and go from there but no time. 
 
 ## Contents
 
-### Documentation
-- `Class-wide projects-1-1.pdf` - Project specifications and requirements
-- `Class-wide projects-1-1.txt` - Text version of project documentation
-- `output.json` - Benchmark results in JSON format
-- `test.fio` - FIO configuration file for testing
-
 ### Project Structure
-The `project3/` subdirectory contains:
-- [**Detailed Project README**](./project3/README.md) - Complete setup and usage instructions
-- **Configuration Files** (`configs/`) - FIO job configurations for different test scenarios
-- **Results Data** (`results_*/`) - Raw benchmark data and processed results
-- **Scripts** (`scripts/`) - Automation scripts for running benchmark suites
-- **Plots** (`plots/`) - Generated performance visualizations
+The `project3/scripts` subdirectory contains:
+Run_all_tests.sh - runs all tests
 
-## Key Test Categories
+The `project3/config` subdirectory contains:
+Configuration for all tests
 
+## How the drive is supposed to perform
+
+## Results from WSL testing spoiled by fuse. 
 ### 1. Zero-Queue Baseline Tests
 - 4 KiB random reads/writes (QD=1)
 - 128 KiB sequential reads/writes (QD=1)
@@ -45,16 +39,11 @@ The `project3/` subdirectory contains:
 
 ## System Configuration
 - **Storage**: XPG Gammix S70 Blade 1TB (Micron TLC B47R 512Gb)
-- **OS**: Windows 11 (primary), WSL (experimental)
-- **Test Environment**: Dedicated G: drive for isolated testing
+- **OS**:  WSL 
+- **Test Environment**: Dedicated NTFS G: drive for isolated testing
 
-## Safety Features
-- Uses dedicated test files instead of raw device access
-- Configurable test file sizes to prevent data loss
-- Automated cleanup procedures
 
 ## Quick Start
-1. Review the [detailed project README](./project3/README.md) for complete setup instructions
 2. Install FIO and configure test environment
 3. Run baseline tests before comprehensive benchmarking
 4. Analyze results using provided visualization tools

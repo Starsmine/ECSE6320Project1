@@ -115,6 +115,10 @@ def plot_blocksize_sweep(df, access_pattern):
     """Plot blocksize sweep results"""
     pattern_df = df[df['job_name'].str.contains(access_pattern, case=False)].copy()
     
+    if pattern_df.empty:
+        print(f"Warning: No data found for pattern '{access_pattern}'")
+        return
+    
     # Convert block size strings to numeric values
     def parse_bs(bs):
         if isinstance(bs, str):
@@ -133,7 +137,7 @@ def plot_blocksize_sweep(df, access_pattern):
     ax2 = ax1.twinx()
     
     # Plot IOPS/Bandwidth with error checking
-    if access_pattern.lower() == 'random':
+    if access_pattern.lower() == 'rand':
         if (pattern_df['read_iops'] > 0).any():
             ax1.plot(range(len(pattern_df)), pattern_df['read_iops'], 'b-o', label='Read IOPS')
         if (pattern_df['write_iops'] > 0).any():
@@ -159,21 +163,35 @@ def plot_blocksize_sweep(df, access_pattern):
     ax1.set_xticklabels(bs_labels, rotation=45)
     ax1.set_xlabel('Block Size')
     
-    # Set log scale for y-axes if data is positive
+    # Customize y-axis scaling and ticks
     if ax1.get_lines():
         data = np.concatenate([line.get_ydata() for line in ax1.get_lines()])
-        if np.all(data > 0):
-            ax1.set_yscale('log')
+        if np.all(data > 0) and len(data) > 0:
+            # For sequential bandwidth plots, use linear scale with more granular ticks
+            if access_pattern.lower() == 'seq':
+                # Set specific tick locations for bandwidth
+                min_bw = np.min(data)
+                max_bw = np.max(data)
+                # Create granular ticks - every 10 MB/s
+                tick_spacing = 10
+                tick_start = int(min_bw // tick_spacing) * tick_spacing
+                tick_end = int((max_bw // tick_spacing) + 1) * tick_spacing
+                ticks = np.arange(tick_start, tick_end + tick_spacing, tick_spacing)
+                ax1.set_yticks(ticks)
+                ax1.grid(True, alpha=0.3)
+            else:
+                ax1.set_yscale('log')
     
     if ax2.get_lines():
         data = np.concatenate([line.get_ydata() for line in ax2.get_lines()])
-        if np.all(data > 0):
+        if np.all(data > 0) and len(data) > 0:
             ax2.set_yscale('log')
     
     # Add legend
     lines1, labels1 = ax1.get_legend_handles_labels()
     lines2, labels2 = ax2.get_legend_handles_labels()
-    ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left', bbox_to_anchor=(1.15, 1.0))
+    if lines1 or lines2:
+        ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left', bbox_to_anchor=(1.15, 1.0))
     
     plt.title(f'{access_pattern.title()} Access Pattern: Performance vs Block Size')
     
@@ -211,62 +229,126 @@ def plot_rw_mix(df):
     plt.savefig('rw_mix.png', bbox_inches='tight', dpi=300)
     plt.close()
 
-def plot_qd_sweep(df, pattern='4k-rand'):
+def plot_qd_sweep(df, pattern='qd'):
     """Plot queue depth sweep results"""
     qd_df = df[df['job_name'].str.contains(pattern, case=False)].copy()
+    
+    if qd_df.empty:
+        print(f"Warning: No data found for QD pattern '{pattern}'")
+        return
+        
     qd_df = qd_df.sort_values('iodepth')
     
     plt.figure(figsize=(10, 6))
     
-    # Plot throughput vs latency
-    plt.errorbar(qd_df['read_mean'], qd_df['read_iops'], 
-                yerr=qd_df['read_iops']*0.05,  # Assuming 5% error
-                fmt='bo-', label='Read')
-    plt.errorbar(qd_df['write_mean'], qd_df['write_iops'],
-                yerr=qd_df['write_iops']*0.05,
-                fmt='ro-', label='Write')
+    # Filter out rows with zero or negative values for plotting
+    valid_read = qd_df[(qd_df['read_mean'] > 0) & (qd_df['read_iops'] > 0)]
+    valid_write = qd_df[(qd_df['write_mean'] > 0) & (qd_df['write_iops'] > 0)]
     
-    for i, row in qd_df.iterrows():
-        plt.annotate(f'QD={row["iodepth"]}', 
-                    (row['read_mean'], row['read_iops']),
-                    xytext=(5, 5), textcoords='offset points')
+    # Plot throughput vs latency only if we have valid data
+    if not valid_read.empty:
+        plt.errorbar(valid_read['read_mean'], valid_read['read_iops'], 
+                    yerr=valid_read['read_iops']*0.05,  # Assuming 5% error
+                    fmt='bo-', label='Read')
+        
+        for i, row in valid_read.iterrows():
+            plt.annotate(f'QD={row["iodepth"]}', 
+                        (row['read_mean'], row['read_iops']),
+                        xytext=(5, 5), textcoords='offset points')
+    
+    if not valid_write.empty:
+        plt.errorbar(valid_write['write_mean'], valid_write['write_iops'],
+                    yerr=valid_write['write_iops']*0.05,
+                    fmt='ro-', label='Write')
     
     plt.xlabel('Latency (μs)')
     plt.ylabel('IOPS')
-    plt.xscale('log')
-    plt.yscale('log')
+    
+    # Only use log scale if we have positive data
+    if not valid_read.empty or not valid_write.empty:
+        all_latency = []
+        all_iops = []
+        if not valid_read.empty:
+            all_latency.extend(valid_read['read_mean'])
+            all_iops.extend(valid_read['read_iops'])
+        if not valid_write.empty:
+            all_latency.extend(valid_write['write_mean'])
+            all_iops.extend(valid_write['write_iops'])
+        
+        if all(x > 0 for x in all_latency):
+            plt.xscale('log')
+        if all(x > 0 for x in all_iops):
+            plt.yscale('log')
+    
     plt.grid(True)
     plt.legend()
     plt.title('Queue Depth vs Performance Trade-off')
     
-    plt.tight_layout()
+    plt.subplots_adjust(right=0.85, bottom=0.15)
     plt.savefig('qd_sweep.png', bbox_inches='tight', dpi=300)
     plt.close()
 
-def plot_tail_latency(df, pattern='4k-rand'):
+def plot_tail_latency(df, pattern=''):
     """Plot tail latency analysis"""
-    tail_df = df[df['job_name'].str.contains(pattern, case=False)].copy()
+    if pattern:
+        tail_df = df[df['job_name'].str.contains(pattern, case=False)].copy()
+    else:
+        tail_df = df.copy()  # Use all data if no pattern specified
+    
+    if tail_df.empty:
+        print(f"Warning: No data found for tail latency pattern '{pattern}'")
+        return
     
     percentiles = ['p50', 'p95', 'p99', 'p99.9']
+    percentile_labels = ['Median\n(50th)', '95th\nPercentile', '99th\nPercentile', 'Tail\n(99.9th)']
     
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(12, 6))  # Make it wider to accommodate longer labels
     
+    plotted_any = False
     for op in ['read', 'write']:
         lat_data = []
-        for p in percentiles:
-            lat_data.append(tail_df[f'{op}_{p}'])
+        valid_percentiles = []
+        valid_labels = []
         
-        plt.plot(range(len(percentiles)), lat_data, 
-                'o-', label=f'{op.capitalize()} Latency')
+        # Check which percentile columns actually exist and have valid data
+        for i, p in enumerate(percentiles):
+            col_name = f'{op}_{p}'
+            if col_name in tail_df.columns and not tail_df[col_name].isna().all():
+                # Get the mean value across all jobs for this percentile
+                mean_val = tail_df[col_name].mean()
+                if mean_val > 0:  # Only include positive values
+                    lat_data.append(mean_val)
+                    valid_percentiles.append(p)
+                    valid_labels.append(percentile_labels[i])
+        
+        # Only plot if we have valid data
+        if lat_data and valid_percentiles:
+            plt.plot(range(len(valid_percentiles)), lat_data, 
+                    'o-', label=f'{op.capitalize()} Latency', markersize=8, linewidth=2)
+            plotted_any = True
     
-    plt.xticks(range(len(percentiles)), percentiles)
+    if not plotted_any:
+        print(f"Warning: No valid latency percentile data found for '{pattern}' pattern")
+        plt.close()
+        return
+    
+    plt.xticks(range(len(valid_labels)), valid_labels)
+    plt.xlabel('Latency Distribution Points')
     plt.ylabel('Latency (μs)')
-    plt.yscale('log')
+    
+    # Only use log scale if all data is positive
+    if plt.gca().get_lines():
+        all_data = []
+        for line in plt.gca().get_lines():
+            all_data.extend(line.get_ydata())
+        if all(x > 0 for x in all_data):
+            plt.yscale('log')
+    
     plt.grid(True)
     plt.legend()
     plt.title('Tail Latency Analysis')
     
-    plt.tight_layout()
+    plt.subplots_adjust(right=0.85, bottom=0.15)
     plt.savefig('tail_latency.png', bbox_inches='tight', dpi=300)
     plt.close()
 
@@ -295,20 +377,32 @@ def parse_fio_json(file_path):
         plot_baseline_table(df)
     elif 'blocksize' in file_name.lower():
         if 'random' in file_name.lower():
-            plot_blocksize_sweep(df, 'random')
+            plot_blocksize_sweep(df, 'rand')  # Match job names like "4k-random"
         elif 'sequential' in file_name.lower():
-            plot_blocksize_sweep(df, 'sequential')
+            plot_blocksize_sweep(df, 'seq')   # Match job names like "4k-seq"
     elif 'rw_mix' in file_name.lower():
         plot_rw_mix(df)
     elif 'qd_sweep' in file_name.lower():
-        pattern = '128k' if '128k' in file_name.lower() else '4k'
-        plot_qd_sweep(df, pattern)
+        # For QD sweep, match jobs that start with 'qd' 
+        plot_qd_sweep(df, 'qd')
     elif 'tail_latency' in file_name.lower():
-        plot_tail_latency(df)
+        # For tail latency tests, look for any job patterns
+        plot_tail_latency(df, '')
     
     # Print summary statistics
     print(f"\nSummary Statistics for {file_name}:")
-    print(df[['job_name', 'read_iops', 'write_iops', 'read_mean', 'write_mean']].to_string())
+    print(f"Available columns: {df.columns.tolist()}")
+    
+    # Only show columns that exist
+    summary_cols = ['job_name']
+    for col in ['read_iops', 'write_iops', 'read_mean', 'write_mean']:
+        if col in df.columns:
+            summary_cols.append(col)
+    
+    if len(summary_cols) > 1:
+        print(df[summary_cols].to_string())
+    else:
+        print("No standard performance metrics found in data")
 
 def main():
     if len(sys.argv) != 2:
