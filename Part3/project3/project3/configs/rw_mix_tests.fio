@@ -1,0 +1,33 @@
+[global]
+direct=1
+time_based=1
+runtime=30
+ramp_time=5
+norandommap=1
+randrepeat=0
+percentile_list=50:95:99:99.9
+lat_percentiles=1
+size=4G
+directory=/mnt/g
+ioengine=libaio
+filename=${DIRECTORY}/fio_testfile
+bs=4k
+iodepth=32  # Increased queue depth
+numjobs=16  # Use 16 threads
+offset_increment=256M  # Prevent thread overlap
+
+[100read]
+rw=randread
+rwmixread=100
+
+[100write]
+rw=randwrite
+rwmixread=0
+
+[7030-mix]
+rw=randrw
+rwmixread=70
+
+[5050-mix]
+rw=randrw
+rwmixread=50

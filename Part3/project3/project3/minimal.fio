@@ -1,0 +1,6 @@
+[4k-randread]
+filename=G:/fio_testfile
+rw=randread
+bs=4k
+direct=1
+ioengine=windowsaio
