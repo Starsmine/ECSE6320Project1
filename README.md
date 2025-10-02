@@ -35,9 +35,7 @@ Complier Flags: for project 1
 
 ## Project Structure
 
-This repository contains several projects demonstrating SIMD performance analysis and optimization:
-
-The hours spent on this project exceed 40 and it is not in a state I am happy with. Lots of benchmarking errors and malformed data still exist. 
+The Time spent on this project exceed 45 hours and it is not in any kind of state I am happy with. Lots of benchmarking errors and malformed data still exist at the time of the due date. 
 
 ### Project Reports
 - [**Project1Saxpy**](./Project1Saxpy/README.md) - SAXPY (Single-precision A*X Plus Y) SIMD implementation
