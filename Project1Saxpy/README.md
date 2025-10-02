@@ -74,6 +74,8 @@ The `plots_output/` directory contains extensive performance visualizations:
 
         So because I am using the correct vector registers for each instruction, it just zeros it out the upper bits and they all use the same instructions. 
 
+        I also notice that I did not use FMA instructions even though the CPU supports it. I only realized as I was writing this report which would probably make my benchmarks even more memory bound with my design. My processor has two vector FMA units per core that I could have used. 
+
 
 Scaler
 ```asm
@@ -186,7 +188,33 @@ Tail handling was only done in AVX512 and was done always so I do not have an im
 The difference between Float32 and Float64 being about double is to be expected. These go into the same FMA/FADD units and you can push double the amount of Float32 per exacution at time since the vector width is the same. 
 
 #### Roofline
-No graphs currently. DRAM Bandwidth of 60GB/s was measured. So a maximum of 15GFLOPs of Float32 or 7.5GFLOPS of Float64 would be expected. I have about 2/3rds of that when DRAM limited. I imagine the overhead of the system is eating into that other 1/3rd as it still has to run inside L3 on all the other cores. 
+![Saxpyformance Results](./plots_output/saxpy_roofline_model_with_fma.png)
+![Saxpyformance Results](./plots_output/saxpy_roofline_model_without_fma.png)
+
+Theoretical peaks per Claude.... AVX-512 is not correct as zen 4 doublepumps. Im also pretty sure based off the block diagram that I can do more then what is listed as I have multple ALUs and multiple scalers per path. It shows for all workloads I am memory bound still. 
+
+```python
+# With FMA (2 ops per instruction: multiply + add)
+PEAK_SCALAR_GFLOPS_FMA = CPU_FREQ_GHZ * CORES * 2  # 2 FMA ops per cycle per core
+PEAK_SSE2_GFLOPS_FMA = CPU_FREQ_GHZ * CORES * 4 * 2  # 4 float32 per SSE2, 2 ops (FMA)
+PEAK_AVX_GFLOPS_FMA = CPU_FREQ_GHZ * CORES * 8 * 2   # 8 float32 per AVX, 2 ops (FMA)
+PEAK_AVX512_GFLOPS_FMA = CPU_FREQ_GHZ * CORES * 16 * 2  # 16 float32 per AVX-512, 2 ops (FMA)
+
+# Without FMA (1 op per instruction: either multiply OR add)
+PEAK_SCALAR_GFLOPS_NO_FMA = CPU_FREQ_GHZ * CORES * 1  # 1 op per cycle per core
+PEAK_SSE2_GFLOPS_NO_FMA = CPU_FREQ_GHZ * CORES * 4 * 1  # 4 float32 per SSE2, 1 op
+PEAK_AVX_GFLOPS_NO_FMA = CPU_FREQ_GHZ * CORES * 8 * 1   # 8 float32 per AVX, 1 op
+PEAK_AVX512_GFLOPS_NO_FMA = CPU_FREQ_GHZ * CORES * 16 * 1  # 16 float32 per AVX-512, 1 op
+```
+
+
+Scalar: 6 GFLOP/s (instead of 11 with FMA)
+
+SSE2: 22 GFLOP/s (instead of 44 with FMA)
+
+AVX: 44 GFLOP/s (instead of 88 with FMA)
+
+AVX-512: 88 GFLOP/s (instead of 176 with FMA)
 ## Related Projects
 - [Dot Product Implementation](../Project1DotProduct/README.md) - Complementary SIMD project
 - [3D Point Stencil](../Project13dpointstencil/README.md) - Advanced SIMD applications
