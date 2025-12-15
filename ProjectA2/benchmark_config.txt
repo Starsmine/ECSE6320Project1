@@ -1,0 +1,25 @@
+# Example configuration file for custom benchmark sweeps
+# Format: m k n density [optional_name]
+# Lines starting with # are comments
+
+# Small matrices with varying density
+512 512 512 0.01 small_d01
+512 512 512 0.05 small_d05
+512 512 512 0.10 small_d10
+
+# Medium matrices
+1024 1024 1024 0.01 medium_d01
+1024 1024 1024 0.05 medium_d05
+1024 1024 1024 0.20 medium_d20
+
+# Large matrices
+2048 2048 2048 0.01 large_d01
+2048 2048 2048 0.05 large_d05
+
+# Rectangular matrices
+2048 1024 512 0.05 rect_tall
+512 1024 2048 0.05 rect_fat
+
+# Very sparse, large matrices
+4096 4096 4096 0.001 huge_sparse
+4096 4096 4096 0.01 huge_d01

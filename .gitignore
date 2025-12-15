@@ -1,0 +1,68 @@
+# Compiled binaries and object files
+*.o
+*.out
+*.exe
+os_features_bench
+matrix_bench
+filter_bench
+hash_bench
+
+# Result text files (keep only plots)
+results/*.txt
+*.txt
+!README.txt
+!requirements.txt
+
+# But keep benchmark configuration files
+!benchmark_config.txt
+
+# Keep plots (PNG, PDF, SVG)
+!*.png
+!*.pdf
+!*.svg
+!*.jpg
+!*.jpeg
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Log files
+*.log
+!benchmark_run.log
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Core dumps
+core
+core.*
+
+# Perf data
+perf.data
+perf.data.old
