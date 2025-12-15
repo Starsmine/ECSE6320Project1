@@ -28,7 +28,8 @@ This project explores the performance impact of various operating system and CPU
 **Note:** All results are from 5 runs with mean ± standard deviation reported.
 
 ## Benchmarks and Results
-[Bench Results](./benchmark_results.png)
+
+![Benchmark Results](./benchmark_results.png)
 
 ### 1. CPU Affinity and Thread Migration
 
