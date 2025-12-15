@@ -83,17 +83,7 @@ All benchmarks were conducted on:
   - OpenBLAS (ProjectA2 validation)
   - liburing (ProjectA1 async I/O)
   - xxHash (ProjectA3 hashing)
-
-## Benchmark Statistics
-
-| Project | Benchmarks | Result Files | Plots | Lines of Code |
-|---------|------------|--------------|-------|---------------|
-| A1      | 5 features | 5 configs    | 6     | ~500          |
-| A2      | 5 experiments | 82 configs | 4     | ~800          |
-| A3      | 4 filters | 860 configs  | 4     | ~1200         |
-| A4      | 2 strategies | 450 configs | 5     | ~400          |
-| **Total** | **16+** | **~1400** | **19** | **~2900** |
-
+  - 
 ## Repository Structure
 
 ```
@@ -215,22 +205,6 @@ sudo sysctl -w kernel.perf_event_paranoid=-1
 perf stat -e cycles,cache-misses,cache-references ./your_benchmark
 ```
 
-## Citation
-
-If you use this work, please cite:
-
-```
-@misc{ecse6320projects2025,
-  title={ECSE 6320 Advanced Computer Systems Projects},
-  author={[Your Name]},
-  year={2025},
-  url={https://github.com/Starsmine/ECSE6320Project1}
-}
-```
-
-## License
-
-This project is released for educational purposes as part of ECSE 6320 coursework.
 
 ## Contact
 
